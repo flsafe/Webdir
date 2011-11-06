@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 #define STR 128
 
@@ -26,7 +27,7 @@ static int get_settings_file_path(char *out_path_buff){
   if (NULL == home_dir_path)
     return 0;
 
-  return sprintf(out_path_buff, "%128s/%128s", home_dir_path, SETTINGS_FILE);
+  return sprintf(out_path_buff, "%s/%s", home_dir_path, SETTINGS_FILE);
 }
 
 static void set_key_val(char *key, char *val){
@@ -50,12 +51,48 @@ static void read_settings_file(){
    
   while (EOF != fscanf(file, "%128s %128s", setting_key, setting_val))
     set_key_val(setting_key, setting_val);
+
+  fclose(file);
+}
+
+static int settings_file_exists(){
+  return access(SETTINGS_FILE, F_OK) == 0;
+}
+
+static int create_default_settings_file(){
+  FILE *file;
+  char path[STR] = "";
+
+  get_settings_file_path(path);
+  file = fopen(path, "w");
+  if (!file) return 0;
+
+  if (! fprintf(file, "%s %s\n", ACCESS_KEY, "<YourAccessKey>"))
+    return 0;
+  if (! fprintf(file, "%s %s\n", SECRET_KEY, "<YourSecretAccessKey>"))
+    return 0;
+  if (! fprintf(file, "%s %s\n", HOST, "<YourS3Host>"))
+    return 0;
+
+  if (! fprintf(file, "%s %s\n", BUCKET, "<NoneYet>"))
+    return 0;
+
+  fclose(file);
+
+  return 1;
 }
 
 int load_settings(){
   int is_loaded_ok();
 
-  read_settings_file();
+  if (settings_file_exists()){
+    read_settings_file();
+  }
+  else{
+    create_default_settings_file();
+    read_settings_file();
+  }
+    
   return is_loaded_ok();
 }
 
