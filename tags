@@ -1,0 +1,840 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACL_XML_DOC_MAXSIZE	src/acl.c	33;"	d	file:
+ACS_GROUP_ALL_USERS	inc/util.h	38;"	d
+ACS_GROUP_AWS_USERS	inc/util.h	39;"	d
+ACS_GROUP_LOG_DELIVERY	inc/util.h	40;"	d
+ACS_URL	inc/util.h	36;"	d
+ALL_DETAILS_PREFIX	src/s3.c	130;"	d	file:
+ALL_DETAILS_PREFIX_LEN	src/s3.c	131;"	d	file:
+ALL_SOURCES	GNUmakefile	/^ALL_SOURCES := $(LIBS3_SOURCES) s3.c testsimplexml.c$/;"	m
+BLS_XML_DOC_MAXSIZE	src/service_access_logging.c	232;"	d	file:
+BUILD	GNUmakefile	/^        BUILD := build$/;"	m
+BUILD	GNUmakefile	/^        BUILD := build-debug$/;"	m
+BYTE_COUNT_PREFIX	src/s3.c	128;"	d	file:
+BYTE_COUNT_PREFIX_LEN	src/s3.c	129;"	d	file:
+CACHE_CONTROL_PREFIX	src/s3.c	102;"	d	file:
+CACHE_CONTROL_PREFIX_LEN	src/s3.c	103;"	d	file:
+CANNED_ACL_PREFIX	src/s3.c	88;"	d	file:
+CANNED_ACL_PREFIX_LEN	src/s3.c	89;"	d	file:
+CFLAGS	GNUmakefile	/^        CFLAGS := -O3$/;"	m
+CFLAGS	GNUmakefile	/^        CFLAGS := -g$/;"	m
+COMPACTED_METADATA_BUFFER_SIZE	inc/util.h	48;"	d
+CONTENT_DISPOSITION_FILENAME_PREFIX	src/s3.c	108;"	d	file:
+CONTENT_DISPOSITION_FILENAME_PREFIX_LEN	src/s3.c	109;"	d	file:
+CONTENT_ENCODING_PREFIX	src/s3.c	111;"	d	file:
+CONTENT_ENCODING_PREFIX_LEN	src/s3.c	112;"	d	file:
+CONTENT_LENGTH_PREFIX	src/s3.c	100;"	d	file:
+CONTENT_LENGTH_PREFIX_LEN	src/s3.c	101;"	d	file:
+CONTENT_TYPE_PREFIX	src/s3.c	104;"	d	file:
+CONTENT_TYPE_PREFIX_LEN	src/s3.c	105;"	d	file:
+COPY_STRING	src/s3.c	578;"	d	file:
+COPY_STRING_MAXLEN	src/s3.c	568;"	d	file:
+CURL_CFLAGS	GNUmakefile	/^    CURL_CFLAGS := $(shell curl-config --cflags)$/;"	m
+CURL_LIBS	GNUmakefile	/^    CURL_LIBS := $(shell curl-config --libs)$/;"	m
+ConvertAclData	src/general.c	/^typedef struct ConvertAclData$/;"	s	file:
+ConvertAclData	src/general.c	/^} ConvertAclData;$/;"	t	typeref:struct:ConvertAclData	file:
+ConvertBlsData	src/service_access_logging.c	/^typedef struct ConvertBlsData$/;"	s	file:
+ConvertBlsData	src/service_access_logging.c	/^} ConvertBlsData;$/;"	t	typeref:struct:ConvertBlsData	file:
+CopyObjectData	src/object.c	/^typedef struct CopyObjectData$/;"	s	file:
+CopyObjectData	src/object.c	/^} CopyObjectData;$/;"	t	typeref:struct:CopyObjectData	file:
+CreateBucketData	src/bucket.c	/^typedef struct CreateBucketData$/;"	s	file:
+CreateBucketData	src/bucket.c	/^} CreateBucketData;                         $/;"	t	typeref:struct:CreateBucketData	file:
+DEBARCH	GNUmakefile	/^$(DEBDEVPKG): DEBARCH = $(shell dpkg-architecture | grep ^DEB_BUILD_ARCH= | \\$/;"	m
+DEBARCH	GNUmakefile	/^$(DEBPKG): DEBARCH = $(shell dpkg-architecture | grep ^DEB_BUILD_ARCH= | \\$/;"	m
+DEBDEVPKG	GNUmakefile	/^DEBDEVPKG = $(BUILD)\/pkg\/libs3-dev_$(LIBS3_VER).deb$/;"	m
+DEBPKG	GNUmakefile	/^DEBPKG = $(BUILD)\/pkg\/libs3_$(LIBS3_VER).deb$/;"	m
+DELIMITER_PREFIX	src/s3.c	94;"	d	file:
+DELIMITER_PREFIX_LEN	src/s3.c	95;"	d	file:
+DESTDIR	GNUmakefile	/^    DESTDIR := \/usr$/;"	m
+DeleteBucketData	src/bucket.c	/^typedef struct DeleteBucketData$/;"	s	file:
+DeleteBucketData	src/bucket.c	/^} DeleteBucketData;$/;"	t	typeref:struct:DeleteBucketData	file:
+ERROR_PARSER_H	inc/error_parser.h	28;"	d
+EXPIRES_PREFIX	src/s3.c	113;"	d	file:
+EXPIRES_PREFIX_LEN	src/s3.c	114;"	d	file:
+EXTRA_DETAILS_SIZE	inc/error_parser.h	35;"	d
+ErrorParser	inc/error_parser.h	/^typedef struct ErrorParser$/;"	s
+ErrorParser	inc/error_parser.h	/^} ErrorParser;$/;"	t	typeref:struct:ErrorParser
+FILENAME_PREFIX	src/s3.c	98;"	d	file:
+FILENAME_PREFIX_LEN	src/s3.c	99;"	d	file:
+FOPEN_EXTRA_FLAGS	src/s3.c	46;"	d	file:
+GetAclData	src/acl.c	/^typedef struct GetAclData$/;"	s	file:
+GetAclData	src/acl.c	/^} GetAclData;$/;"	t	typeref:struct:GetAclData	file:
+GetBlsData	src/service_access_logging.c	/^typedef struct GetBlsData$/;"	s	file:
+GetBlsData	src/service_access_logging.c	/^} GetBlsData;$/;"	t	typeref:struct:GetBlsData	file:
+HANDLE_CODE	src/error_parser.c	154;"	d	file:
+HMAC_SHA1	src/util.c	/^void HMAC_SHA1(unsigned char hmac[20], const unsigned char *key, int key_len,$/;"	f
+HttpRequestType	inc/request.h	/^} HttpRequestType;$/;"	t	typeref:enum:__anon12
+HttpRequestTypeCOPY	inc/request.h	/^    HttpRequestTypeCOPY,$/;"	e	enum:__anon12
+HttpRequestTypeDELETE	inc/request.h	/^    HttpRequestTypeDELETE$/;"	e	enum:__anon12
+HttpRequestTypeGET	inc/request.h	/^    HttpRequestTypeGET,$/;"	e	enum:__anon12
+HttpRequestTypeHEAD	inc/request.h	/^    HttpRequestTypeHEAD,$/;"	e	enum:__anon12
+HttpRequestTypePUT	inc/request.h	/^    HttpRequestTypePUT,$/;"	e	enum:__anon12
+IF_MATCH_PREFIX	src/s3.c	122;"	d	file:
+IF_MATCH_PREFIX_LEN	src/s3.c	123;"	d	file:
+IF_MODIFIED_SINCE_PREFIX	src/s3.c	117;"	d	file:
+IF_MODIFIED_SINCE_PREFIX_LEN	src/s3.c	118;"	d	file:
+IF_NOT_MATCH_PREFIX	src/s3.c	124;"	d	file:
+IF_NOT_MATCH_PREFIX_LEN	src/s3.c	125;"	d	file:
+IF_NOT_MODIFIED_SINCE_PREFIX	src/s3.c	119;"	d	file:
+IF_NOT_MODIFIED_SINCE_PREFIX_LEN	src/s3.c	120;"	d	file:
+LDFLAGS	GNUmakefile	/^LDFLAGS = $(CURL_LIBS) $(LIBXML2_LIBS) -lpthread$/;"	m
+LIBS3_H	inc/libs3.h	28;"	d
+LIBS3_SHARED	GNUmakefile	/^LIBS3_SHARED = $(BUILD)\/lib\/libs3.so.$(LIBS3_VER_MAJOR)$/;"	m
+LIBS3_SOURCES	GNUmakefile	/^LIBS3_SOURCES := acl.c bucket.c error_parser.c general.c \\$/;"	m
+LIBS3_STATIC	GNUmakefile	/^LIBS3_STATIC = $(BUILD)\/lib\/libs3.a$/;"	m
+LIBS3_VER	GNUmakefile	/^LIBS3_VER := $(LIBS3_VER_MAJOR).$(LIBS3_VER_MINOR)$/;"	m
+LIBS3_VER_MAJOR	GNUmakefile	/^LIBS3_VER_MAJOR ?= 2$/;"	m
+LIBS3_VER_MINOR	GNUmakefile	/^LIBS3_VER_MINOR ?= 0$/;"	m
+LIBXML2_CFLAGS	GNUmakefile	/^    LIBXML2_CFLAGS := $(shell xml2-config --cflags)$/;"	m
+LIBXML2_LIBS	GNUmakefile	/^    LIBXML2_LIBS := $(shell xml2-config --libs)$/;"	m
+LOCATION_PREFIX	src/s3.c	86;"	d	file:
+LOCATION_PREFIX_LEN	src/s3.c	87;"	d	file:
+ListBucketContents	src/bucket.c	/^typedef struct ListBucketContents$/;"	s	file:
+ListBucketContents	src/bucket.c	/^} ListBucketContents;$/;"	t	typeref:struct:ListBucketContents	file:
+ListBucketData	src/bucket.c	/^typedef struct ListBucketData$/;"	s	file:
+ListBucketData	src/bucket.c	/^} ListBucketData;$/;"	t	typeref:struct:ListBucketData	file:
+MARKER_PREFIX	src/s3.c	92;"	d	file:
+MARKER_PREFIX_LEN	src/s3.c	93;"	d	file:
+MAXKEYS_PREFIX	src/s3.c	96;"	d	file:
+MAXKEYS_PREFIX_LEN	src/s3.c	97;"	d	file:
+MAX_CANONICALIZED_RESOURCE_SIZE	inc/util.h	64;"	d
+MAX_COMMON_PREFIXES	src/bucket.c	413;"	d	file:
+MAX_CONTENTS	src/bucket.c	411;"	d	file:
+MAX_EXPIRES	src/request.c	1318;"	d	file:
+MAX_URI_SIZE	inc/util.h	59;"	d
+MAX_URLENCODED_KEY_SIZE	inc/util.h	54;"	d
+MD5_PREFIX	src/s3.c	106;"	d	file:
+MD5_PREFIX_LEN	src/s3.c	107;"	d	file:
+NO_STATUS_PREFIX	src/s3.c	132;"	d	file:
+NO_STATUS_PREFIX_LEN	src/s3.c	133;"	d	file:
+PREFIX_PREFIX	src/s3.c	90;"	d	file:
+PREFIX_PREFIX_LEN	src/s3.c	91;"	d	file:
+PTHREAD_H	inc/mingw/pthread.h	28;"	d
+QUIET_ECHO	GNUmakefile	/^        QUIET_ECHO = @ echo > \/dev\/null$/;"	m
+QUIET_ECHO	GNUmakefile	/^        QUIET_ECHO = @ echo$/;"	m
+R0A_B	src/util.c	245;"	d	file:
+R0A_L	src/util.c	239;"	d	file:
+R0B_B	src/util.c	246;"	d	file:
+R0B_L	src/util.c	240;"	d	file:
+R0C_B	src/util.c	247;"	d	file:
+R0C_L	src/util.c	241;"	d	file:
+R0D_B	src/util.c	248;"	d	file:
+R0D_L	src/util.c	242;"	d	file:
+R0E_B	src/util.c	249;"	d	file:
+R0E_L	src/util.c	243;"	d	file:
+R0_B	src/util.c	223;"	d	file:
+R0_L	src/util.c	220;"	d	file:
+R1	src/util.c	226;"	d	file:
+R1A	src/util.c	251;"	d	file:
+R1B	src/util.c	252;"	d	file:
+R1C	src/util.c	253;"	d	file:
+R1D	src/util.c	254;"	d	file:
+R1E	src/util.c	255;"	d	file:
+R2	src/util.c	229;"	d	file:
+R2A	src/util.c	257;"	d	file:
+R2B	src/util.c	258;"	d	file:
+R2C	src/util.c	259;"	d	file:
+R2D	src/util.c	260;"	d	file:
+R2E	src/util.c	261;"	d	file:
+R3	src/util.c	232;"	d	file:
+R3A	src/util.c	263;"	d	file:
+R3B	src/util.c	264;"	d	file:
+R3C	src/util.c	265;"	d	file:
+R3D	src/util.c	266;"	d	file:
+R3E	src/util.c	267;"	d	file:
+R4	src/util.c	235;"	d	file:
+R4A	src/util.c	269;"	d	file:
+R4B	src/util.c	270;"	d	file:
+R4C	src/util.c	271;"	d	file:
+R4D	src/util.c	272;"	d	file:
+R4E	src/util.c	273;"	d	file:
+REQUEST_CONTEXT_H	inc/request_context.h	28;"	d
+REQUEST_H	inc/request.h	28;"	d
+REQUEST_STACK_SIZE	src/request.c	39;"	d	file:
+RESOURCE_PREFIX	src/s3.c	134;"	d	file:
+RESOURCE_PREFIX_LEN	src/s3.c	135;"	d	file:
+RESPONSE_HEADERS_HANDLER_H	inc/response_headers_handler.h	28;"	d
+Request	inc/request.h	/^typedef struct Request$/;"	s
+Request	inc/request.h	/^} Request;$/;"	t	typeref:struct:Request
+RequestComputedValues	src/request.c	/^typedef struct RequestComputedValues$/;"	s	file:
+RequestComputedValues	src/request.c	/^} RequestComputedValues;$/;"	t	typeref:struct:RequestComputedValues	file:
+RequestParams	inc/request.h	/^typedef struct RequestParams$/;"	s
+RequestParams	inc/request.h	/^} RequestParams;$/;"	t	typeref:struct:RequestParams
+ResponseHeadersHandler	inc/response_headers_handler.h	/^typedef struct ResponseHeadersHandler$/;"	s
+ResponseHeadersHandler	inc/response_headers_handler.h	/^} ResponseHeadersHandler;$/;"	t	typeref:struct:ResponseHeadersHandler
+S3AclGrant	inc/libs3.h	/^typedef struct S3AclGrant$/;"	s
+S3AclGrant	inc/libs3.h	/^} S3AclGrant;$/;"	t	typeref:struct:S3AclGrant
+S3BucketContext	inc/libs3.h	/^typedef struct S3BucketContext$/;"	s
+S3BucketContext	inc/libs3.h	/^} S3BucketContext;$/;"	t	typeref:struct:S3BucketContext
+S3CannedAcl	inc/libs3.h	/^} S3CannedAcl;$/;"	t	typeref:enum:__anon8
+S3CannedAclAuthenticatedRead	inc/libs3.h	/^    S3CannedAclAuthenticatedRead        = 3  \/* authenticated-read *\/$/;"	e	enum:__anon8
+S3CannedAclPrivate	inc/libs3.h	/^    S3CannedAclPrivate                  = 0, \/* private *\/$/;"	e	enum:__anon8
+S3CannedAclPublicRead	inc/libs3.h	/^    S3CannedAclPublicRead               = 1, \/* public-read *\/$/;"	e	enum:__anon8
+S3CannedAclPublicReadWrite	inc/libs3.h	/^    S3CannedAclPublicReadWrite          = 2, \/* public-read-write *\/$/;"	e	enum:__anon8
+S3ErrorDetails	inc/libs3.h	/^typedef struct S3ErrorDetails$/;"	s
+S3ErrorDetails	inc/libs3.h	/^} S3ErrorDetails;$/;"	t	typeref:struct:S3ErrorDetails
+S3GetConditions	inc/libs3.h	/^typedef struct S3GetConditions$/;"	s
+S3GetConditions	inc/libs3.h	/^} S3GetConditions;$/;"	t	typeref:struct:S3GetConditions
+S3GetObjectDataCallback	inc/libs3.h	/^typedef S3Status (S3GetObjectDataCallback)(int bufferSize, const char *buffer,$/;"	t
+S3GetObjectHandler	inc/libs3.h	/^typedef struct S3GetObjectHandler$/;"	s
+S3GetObjectHandler	inc/libs3.h	/^} S3GetObjectHandler;$/;"	t	typeref:struct:S3GetObjectHandler
+S3GranteeType	inc/libs3.h	/^} S3GranteeType;$/;"	t	typeref:enum:__anon6
+S3GranteeTypeAllAwsUsers	inc/libs3.h	/^    S3GranteeTypeAllAwsUsers            = 2,$/;"	e	enum:__anon6
+S3GranteeTypeAllUsers	inc/libs3.h	/^    S3GranteeTypeAllUsers               = 3,$/;"	e	enum:__anon6
+S3GranteeTypeAmazonCustomerByEmail	inc/libs3.h	/^    S3GranteeTypeAmazonCustomerByEmail  = 0,$/;"	e	enum:__anon6
+S3GranteeTypeCanonicalUser	inc/libs3.h	/^    S3GranteeTypeCanonicalUser          = 1,$/;"	e	enum:__anon6
+S3GranteeTypeLogDelivery	inc/libs3.h	/^    S3GranteeTypeLogDelivery            = 4$/;"	e	enum:__anon6
+S3ListBucketCallback	inc/libs3.h	/^typedef S3Status (S3ListBucketCallback)(int isTruncated,$/;"	t
+S3ListBucketContent	inc/libs3.h	/^typedef struct S3ListBucketContent$/;"	s
+S3ListBucketContent	inc/libs3.h	/^} S3ListBucketContent;$/;"	t	typeref:struct:S3ListBucketContent
+S3ListBucketHandler	inc/libs3.h	/^typedef struct S3ListBucketHandler$/;"	s
+S3ListBucketHandler	inc/libs3.h	/^} S3ListBucketHandler;$/;"	t	typeref:struct:S3ListBucketHandler
+S3ListServiceCallback	inc/libs3.h	/^typedef S3Status (S3ListServiceCallback)(const char *ownerId, $/;"	t
+S3ListServiceHandler	inc/libs3.h	/^typedef struct S3ListServiceHandler$/;"	s
+S3ListServiceHandler	inc/libs3.h	/^} S3ListServiceHandler;$/;"	t	typeref:struct:S3ListServiceHandler
+S3NameValue	inc/libs3.h	/^typedef struct S3NameValue$/;"	s
+S3NameValue	inc/libs3.h	/^} S3NameValue;$/;"	t	typeref:struct:S3NameValue
+S3Permission	inc/libs3.h	/^} S3Permission;$/;"	t	typeref:enum:__anon7
+S3PermissionFullControl	inc/libs3.h	/^    S3PermissionFullControl             = 4$/;"	e	enum:__anon7
+S3PermissionRead	inc/libs3.h	/^    S3PermissionRead                    = 0,$/;"	e	enum:__anon7
+S3PermissionReadACP	inc/libs3.h	/^    S3PermissionReadACP                 = 2,$/;"	e	enum:__anon7
+S3PermissionWrite	inc/libs3.h	/^    S3PermissionWrite                   = 1,$/;"	e	enum:__anon7
+S3PermissionWriteACP	inc/libs3.h	/^    S3PermissionWriteACP                = 3,$/;"	e	enum:__anon7
+S3Protocol	inc/libs3.h	/^} S3Protocol;$/;"	t	typeref:enum:__anon4
+S3ProtocolHTTP	inc/libs3.h	/^    S3ProtocolHTTP                      = 1$/;"	e	enum:__anon4
+S3ProtocolHTTPS	inc/libs3.h	/^    S3ProtocolHTTPS                     = 0,$/;"	e	enum:__anon4
+S3PutObjectDataCallback	inc/libs3.h	/^typedef int (S3PutObjectDataCallback)(int bufferSize, char *buffer,$/;"	t
+S3PutObjectHandler	inc/libs3.h	/^typedef struct S3PutObjectHandler$/;"	s
+S3PutObjectHandler	inc/libs3.h	/^} S3PutObjectHandler;$/;"	t	typeref:struct:S3PutObjectHandler
+S3PutProperties	inc/libs3.h	/^typedef struct S3PutProperties$/;"	s
+S3PutProperties	inc/libs3.h	/^} S3PutProperties;$/;"	t	typeref:struct:S3PutProperties
+S3RequestContext	inc/libs3.h	/^typedef struct S3RequestContext S3RequestContext;$/;"	t	typeref:struct:S3RequestContext
+S3RequestContext	inc/request_context.h	/^struct S3RequestContext$/;"	s
+S3ResponseCompleteCallback	inc/libs3.h	/^typedef void (S3ResponseCompleteCallback)(S3Status status,$/;"	t
+S3ResponseHandler	inc/libs3.h	/^typedef struct S3ResponseHandler$/;"	s
+S3ResponseHandler	inc/libs3.h	/^} S3ResponseHandler;$/;"	t	typeref:struct:S3ResponseHandler
+S3ResponseProperties	inc/libs3.h	/^typedef struct S3ResponseProperties$/;"	s
+S3ResponseProperties	inc/libs3.h	/^} S3ResponseProperties;$/;"	t	typeref:struct:S3ResponseProperties
+S3ResponsePropertiesCallback	inc/libs3.h	/^typedef S3Status (S3ResponsePropertiesCallback)$/;"	t
+S3Status	inc/libs3.h	/^} S3Status;$/;"	t	typeref:enum:__anon3
+S3StatusAbortedByCallback	inc/libs3.h	/^    S3StatusAbortedByCallback                               ,$/;"	e	enum:__anon3
+S3StatusBadCacheControl	inc/libs3.h	/^    S3StatusBadCacheControl                                 ,$/;"	e	enum:__anon3
+S3StatusBadContentDispositionFilename	inc/libs3.h	/^    S3StatusBadContentDispositionFilename                   ,$/;"	e	enum:__anon3
+S3StatusBadContentEncoding	inc/libs3.h	/^    S3StatusBadContentEncoding                              ,$/;"	e	enum:__anon3
+S3StatusBadContentType	inc/libs3.h	/^    S3StatusBadContentType                                  ,$/;"	e	enum:__anon3
+S3StatusBadGrantee	inc/libs3.h	/^    S3StatusBadGrantee                                      ,$/;"	e	enum:__anon3
+S3StatusBadIfMatchETag	inc/libs3.h	/^    S3StatusBadIfMatchETag                                  ,$/;"	e	enum:__anon3
+S3StatusBadIfNotMatchETag	inc/libs3.h	/^    S3StatusBadIfNotMatchETag                               ,$/;"	e	enum:__anon3
+S3StatusBadMD5	inc/libs3.h	/^    S3StatusBadMD5                                          ,$/;"	e	enum:__anon3
+S3StatusBadMetaData	inc/libs3.h	/^    S3StatusBadMetaData                                     ,$/;"	e	enum:__anon3
+S3StatusBadPermission	inc/libs3.h	/^    S3StatusBadPermission                                   ,$/;"	e	enum:__anon3
+S3StatusCacheControlTooLong	inc/libs3.h	/^    S3StatusCacheControlTooLong                             ,$/;"	e	enum:__anon3
+S3StatusConnectionFailed	inc/libs3.h	/^    S3StatusConnectionFailed                                ,$/;"	e	enum:__anon3
+S3StatusContentDispositionFilenameTooLong	inc/libs3.h	/^    S3StatusContentDispositionFilenameTooLong               ,$/;"	e	enum:__anon3
+S3StatusContentEncodingTooLong	inc/libs3.h	/^    S3StatusContentEncodingTooLong                          ,$/;"	e	enum:__anon3
+S3StatusContentTypeTooLong	inc/libs3.h	/^    S3StatusContentTypeTooLong                              ,$/;"	e	enum:__anon3
+S3StatusEmailAddressTooLong	inc/libs3.h	/^    S3StatusEmailAddressTooLong                             ,$/;"	e	enum:__anon3
+S3StatusErrorAccessDenied	inc/libs3.h	/^    S3StatusErrorAccessDenied                               ,$/;"	e	enum:__anon3
+S3StatusErrorAccountProblem	inc/libs3.h	/^    S3StatusErrorAccountProblem                             ,$/;"	e	enum:__anon3
+S3StatusErrorAmbiguousGrantByEmailAddress	inc/libs3.h	/^    S3StatusErrorAmbiguousGrantByEmailAddress               ,$/;"	e	enum:__anon3
+S3StatusErrorBadDigest	inc/libs3.h	/^    S3StatusErrorBadDigest                                  ,$/;"	e	enum:__anon3
+S3StatusErrorBucketAlreadyExists	inc/libs3.h	/^    S3StatusErrorBucketAlreadyExists                        ,$/;"	e	enum:__anon3
+S3StatusErrorBucketAlreadyOwnedByYou	inc/libs3.h	/^    S3StatusErrorBucketAlreadyOwnedByYou                    ,$/;"	e	enum:__anon3
+S3StatusErrorBucketNotEmpty	inc/libs3.h	/^    S3StatusErrorBucketNotEmpty                             ,$/;"	e	enum:__anon3
+S3StatusErrorCredentialsNotSupported	inc/libs3.h	/^    S3StatusErrorCredentialsNotSupported                    ,$/;"	e	enum:__anon3
+S3StatusErrorCrossLocationLoggingProhibited	inc/libs3.h	/^    S3StatusErrorCrossLocationLoggingProhibited             ,$/;"	e	enum:__anon3
+S3StatusErrorEntityTooLarge	inc/libs3.h	/^    S3StatusErrorEntityTooLarge                             ,$/;"	e	enum:__anon3
+S3StatusErrorEntityTooSmall	inc/libs3.h	/^    S3StatusErrorEntityTooSmall                             ,$/;"	e	enum:__anon3
+S3StatusErrorExpiredToken	inc/libs3.h	/^    S3StatusErrorExpiredToken                               ,$/;"	e	enum:__anon3
+S3StatusErrorIncompleteBody	inc/libs3.h	/^    S3StatusErrorIncompleteBody                             ,$/;"	e	enum:__anon3
+S3StatusErrorIncorrectNumberOfFilesInPostRequest	inc/libs3.h	/^    S3StatusErrorIncorrectNumberOfFilesInPostRequest        ,$/;"	e	enum:__anon3
+S3StatusErrorInlineDataTooLarge	inc/libs3.h	/^    S3StatusErrorInlineDataTooLarge                         ,$/;"	e	enum:__anon3
+S3StatusErrorInternalError	inc/libs3.h	/^    S3StatusErrorInternalError                              ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidAccessKeyId	inc/libs3.h	/^    S3StatusErrorInvalidAccessKeyId                         ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidAddressingHeader	inc/libs3.h	/^    S3StatusErrorInvalidAddressingHeader                    ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidArgument	inc/libs3.h	/^    S3StatusErrorInvalidArgument                            ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidBucketName	inc/libs3.h	/^    S3StatusErrorInvalidBucketName                          ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidDigest	inc/libs3.h	/^    S3StatusErrorInvalidDigest                              ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidLocationConstraint	inc/libs3.h	/^    S3StatusErrorInvalidLocationConstraint                  ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidPayer	inc/libs3.h	/^    S3StatusErrorInvalidPayer                               ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidPolicyDocument	inc/libs3.h	/^    S3StatusErrorInvalidPolicyDocument                      ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidRange	inc/libs3.h	/^    S3StatusErrorInvalidRange                               ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidSOAPRequest	inc/libs3.h	/^    S3StatusErrorInvalidSOAPRequest                         ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidSecurity	inc/libs3.h	/^    S3StatusErrorInvalidSecurity                            ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidStorageClass	inc/libs3.h	/^    S3StatusErrorInvalidStorageClass                        ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidTargetBucketForLogging	inc/libs3.h	/^    S3StatusErrorInvalidTargetBucketForLogging              ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidToken	inc/libs3.h	/^    S3StatusErrorInvalidToken                               ,$/;"	e	enum:__anon3
+S3StatusErrorInvalidURI	inc/libs3.h	/^    S3StatusErrorInvalidURI                                 ,$/;"	e	enum:__anon3
+S3StatusErrorKeyTooLong	inc/libs3.h	/^    S3StatusErrorKeyTooLong                                 ,$/;"	e	enum:__anon3
+S3StatusErrorMalformedACLError	inc/libs3.h	/^    S3StatusErrorMalformedACLError                          ,$/;"	e	enum:__anon3
+S3StatusErrorMalformedXML	inc/libs3.h	/^    S3StatusErrorMalformedXML                               ,$/;"	e	enum:__anon3
+S3StatusErrorMaxMessageLengthExceeded	inc/libs3.h	/^    S3StatusErrorMaxMessageLengthExceeded                   ,$/;"	e	enum:__anon3
+S3StatusErrorMaxPostPreDataLengthExceededError	inc/libs3.h	/^    S3StatusErrorMaxPostPreDataLengthExceededError          ,$/;"	e	enum:__anon3
+S3StatusErrorMetadataTooLarge	inc/libs3.h	/^    S3StatusErrorMetadataTooLarge                           ,$/;"	e	enum:__anon3
+S3StatusErrorMethodNotAllowed	inc/libs3.h	/^    S3StatusErrorMethodNotAllowed                           ,$/;"	e	enum:__anon3
+S3StatusErrorMissingAttachment	inc/libs3.h	/^    S3StatusErrorMissingAttachment                          ,$/;"	e	enum:__anon3
+S3StatusErrorMissingContentLength	inc/libs3.h	/^    S3StatusErrorMissingContentLength                       ,$/;"	e	enum:__anon3
+S3StatusErrorMissingSecurityElement	inc/libs3.h	/^    S3StatusErrorMissingSecurityElement                     ,$/;"	e	enum:__anon3
+S3StatusErrorMissingSecurityHeader	inc/libs3.h	/^    S3StatusErrorMissingSecurityHeader                      ,$/;"	e	enum:__anon3
+S3StatusErrorNoLoggingStatusForKey	inc/libs3.h	/^    S3StatusErrorNoLoggingStatusForKey                      ,$/;"	e	enum:__anon3
+S3StatusErrorNoSuchBucket	inc/libs3.h	/^    S3StatusErrorNoSuchBucket                               ,$/;"	e	enum:__anon3
+S3StatusErrorNoSuchKey	inc/libs3.h	/^    S3StatusErrorNoSuchKey                                  ,$/;"	e	enum:__anon3
+S3StatusErrorNotImplemented	inc/libs3.h	/^    S3StatusErrorNotImplemented                             ,$/;"	e	enum:__anon3
+S3StatusErrorNotSignedUp	inc/libs3.h	/^    S3StatusErrorNotSignedUp                                ,$/;"	e	enum:__anon3
+S3StatusErrorOperationAborted	inc/libs3.h	/^    S3StatusErrorOperationAborted                           ,$/;"	e	enum:__anon3
+S3StatusErrorPermanentRedirect	inc/libs3.h	/^    S3StatusErrorPermanentRedirect                          ,$/;"	e	enum:__anon3
+S3StatusErrorPreconditionFailed	inc/libs3.h	/^    S3StatusErrorPreconditionFailed                         ,$/;"	e	enum:__anon3
+S3StatusErrorRedirect	inc/libs3.h	/^    S3StatusErrorRedirect                                   ,$/;"	e	enum:__anon3
+S3StatusErrorRequestIsNotMultiPartContent	inc/libs3.h	/^    S3StatusErrorRequestIsNotMultiPartContent               ,$/;"	e	enum:__anon3
+S3StatusErrorRequestTimeTooSkewed	inc/libs3.h	/^    S3StatusErrorRequestTimeTooSkewed                       ,$/;"	e	enum:__anon3
+S3StatusErrorRequestTimeout	inc/libs3.h	/^    S3StatusErrorRequestTimeout                             ,$/;"	e	enum:__anon3
+S3StatusErrorRequestTorrentOfBucketError	inc/libs3.h	/^    S3StatusErrorRequestTorrentOfBucketError                ,$/;"	e	enum:__anon3
+S3StatusErrorSignatureDoesNotMatch	inc/libs3.h	/^    S3StatusErrorSignatureDoesNotMatch                      ,$/;"	e	enum:__anon3
+S3StatusErrorSlowDown	inc/libs3.h	/^    S3StatusErrorSlowDown                                   ,$/;"	e	enum:__anon3
+S3StatusErrorTemporaryRedirect	inc/libs3.h	/^    S3StatusErrorTemporaryRedirect                          ,$/;"	e	enum:__anon3
+S3StatusErrorTokenRefreshRequired	inc/libs3.h	/^    S3StatusErrorTokenRefreshRequired                       ,$/;"	e	enum:__anon3
+S3StatusErrorTooManyBuckets	inc/libs3.h	/^    S3StatusErrorTooManyBuckets                             ,$/;"	e	enum:__anon3
+S3StatusErrorUnexpectedContent	inc/libs3.h	/^    S3StatusErrorUnexpectedContent                          ,$/;"	e	enum:__anon3
+S3StatusErrorUnknown	inc/libs3.h	/^    S3StatusErrorUnknown                                    ,$/;"	e	enum:__anon3
+S3StatusErrorUnresolvableGrantByEmailAddress	inc/libs3.h	/^    S3StatusErrorUnresolvableGrantByEmailAddress            ,$/;"	e	enum:__anon3
+S3StatusErrorUserKeyMustBeSpecified	inc/libs3.h	/^    S3StatusErrorUserKeyMustBeSpecified                     ,$/;"	e	enum:__anon3
+S3StatusFailedToConnect	inc/libs3.h	/^    S3StatusFailedToConnect                                 ,$/;"	e	enum:__anon3
+S3StatusFailedToInitializeRequest	inc/libs3.h	/^    S3StatusFailedToInitializeRequest                       ,$/;"	e	enum:__anon3
+S3StatusGroupUriTooLong	inc/libs3.h	/^    S3StatusGroupUriTooLong                                 ,$/;"	e	enum:__anon3
+S3StatusHeadersTooLong	inc/libs3.h	/^    S3StatusHeadersTooLong                                  ,$/;"	e	enum:__anon3
+S3StatusHttpErrorBadRequest	inc/libs3.h	/^    S3StatusHttpErrorBadRequest                             ,$/;"	e	enum:__anon3
+S3StatusHttpErrorConflict	inc/libs3.h	/^    S3StatusHttpErrorConflict                               ,$/;"	e	enum:__anon3
+S3StatusHttpErrorForbidden	inc/libs3.h	/^    S3StatusHttpErrorForbidden                              ,$/;"	e	enum:__anon3
+S3StatusHttpErrorMovedTemporarily	inc/libs3.h	/^    S3StatusHttpErrorMovedTemporarily                       ,$/;"	e	enum:__anon3
+S3StatusHttpErrorNotFound	inc/libs3.h	/^    S3StatusHttpErrorNotFound                               ,$/;"	e	enum:__anon3
+S3StatusHttpErrorUnknown	inc/libs3.h	/^    S3StatusHttpErrorUnknown$/;"	e	enum:__anon3
+S3StatusIfMatchETagTooLong	inc/libs3.h	/^    S3StatusIfMatchETagTooLong                              ,$/;"	e	enum:__anon3
+S3StatusIfNotMatchETagTooLong	inc/libs3.h	/^    S3StatusIfNotMatchETagTooLong                           ,$/;"	e	enum:__anon3
+S3StatusInternalError	inc/libs3.h	/^    S3StatusInternalError                                   ,$/;"	e	enum:__anon3
+S3StatusInterrupted	inc/libs3.h	/^    S3StatusInterrupted                                     ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameCharacter	inc/libs3.h	/^    S3StatusInvalidBucketNameCharacter                      ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameCharacterSequence	inc/libs3.h	/^    S3StatusInvalidBucketNameCharacterSequence              ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameDotQuadNotation	inc/libs3.h	/^    S3StatusInvalidBucketNameDotQuadNotation                ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameFirstCharacter	inc/libs3.h	/^    S3StatusInvalidBucketNameFirstCharacter                 ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameTooLong	inc/libs3.h	/^    S3StatusInvalidBucketNameTooLong                        ,$/;"	e	enum:__anon3
+S3StatusInvalidBucketNameTooShort	inc/libs3.h	/^    S3StatusInvalidBucketNameTooShort                       ,$/;"	e	enum:__anon3
+S3StatusKeyTooLong	inc/libs3.h	/^    S3StatusKeyTooLong                                      ,$/;"	e	enum:__anon3
+S3StatusMD5TooLong	inc/libs3.h	/^    S3StatusMD5TooLong                                      ,$/;"	e	enum:__anon3
+S3StatusMetaDataHeadersTooLong	inc/libs3.h	/^    S3StatusMetaDataHeadersTooLong                          ,$/;"	e	enum:__anon3
+S3StatusNameLookupError	inc/libs3.h	/^    S3StatusNameLookupError                                 ,$/;"	e	enum:__anon3
+S3StatusOK	inc/libs3.h	/^    S3StatusOK                                              ,$/;"	e	enum:__anon3
+S3StatusOutOfMemory	inc/libs3.h	/^    S3StatusOutOfMemory                                     ,$/;"	e	enum:__anon3
+S3StatusPermissionTooLong	inc/libs3.h	/^    S3StatusPermissionTooLong                               ,$/;"	e	enum:__anon3
+S3StatusQueryParamsTooLong	inc/libs3.h	/^    S3StatusQueryParamsTooLong                              ,$/;"	e	enum:__anon3
+S3StatusServerFailedVerification	inc/libs3.h	/^    S3StatusServerFailedVerification                        ,$/;"	e	enum:__anon3
+S3StatusTargetBucketTooLong	inc/libs3.h	/^    S3StatusTargetBucketTooLong                             ,$/;"	e	enum:__anon3
+S3StatusTargetPrefixTooLong	inc/libs3.h	/^    S3StatusTargetPrefixTooLong                             ,$/;"	e	enum:__anon3
+S3StatusTooManyGrants	inc/libs3.h	/^    S3StatusTooManyGrants                                   ,$/;"	e	enum:__anon3
+S3StatusUriTooLong	inc/libs3.h	/^    S3StatusUriTooLong                                      ,$/;"	e	enum:__anon3
+S3StatusUserDisplayNameTooLong	inc/libs3.h	/^    S3StatusUserDisplayNameTooLong                          ,$/;"	e	enum:__anon3
+S3StatusUserIdTooLong	inc/libs3.h	/^    S3StatusUserIdTooLong                                   ,$/;"	e	enum:__anon3
+S3StatusXmlDocumentTooLarge	inc/libs3.h	/^    S3StatusXmlDocumentTooLarge                             ,$/;"	e	enum:__anon3
+S3StatusXmlParseFailure	inc/libs3.h	/^    S3StatusXmlParseFailure                                 ,$/;"	e	enum:__anon3
+S3UriStyle	inc/libs3.h	/^} S3UriStyle;$/;"	t	typeref:enum:__anon5
+S3UriStylePath	inc/libs3.h	/^    S3UriStylePath                      = 1$/;"	e	enum:__anon5
+S3UriStyleVirtualHost	inc/libs3.h	/^    S3UriStyleVirtualHost               = 0,$/;"	e	enum:__anon5
+S3_DEFAULT_HOSTNAME	inc/libs3.h	126;"	d
+S3_INIT_ALL	inc/libs3.h	217;"	d
+S3_INIT_WINSOCK	inc/libs3.h	210;"	d
+S3_MAX_ACL_GRANT_COUNT	inc/libs3.h	170;"	d
+S3_MAX_AUTHENTICATED_QUERY_STRING_SIZE	inc/libs3.h	199;"	d
+S3_MAX_BUCKET_NAME_SIZE	inc/libs3.h	133;"	d
+S3_MAX_GRANTEE_DISPLAY_NAME_SIZE	inc/libs3.h	191;"	d
+S3_MAX_GRANTEE_EMAIL_ADDRESS_SIZE	inc/libs3.h	177;"	d
+S3_MAX_GRANTEE_USER_ID_SIZE	inc/libs3.h	184;"	d
+S3_MAX_HOSTNAME_SIZE	inc/libs3.h	121;"	d
+S3_MAX_KEY_SIZE	inc/libs3.h	138;"	d
+S3_MAX_METADATA_COUNT	inc/libs3.h	161;"	d
+S3_MAX_METADATA_SIZE	inc/libs3.h	145;"	d
+S3_METADATA_HEADER_NAME_PREFIX	inc/libs3.h	151;"	d
+S3_convert_acl	src/general.c	/^S3Status S3_convert_acl(char *aclXml, char *ownerId, char *ownerDisplayName,$/;"	f
+S3_copy_object	src/object.c	/^void S3_copy_object(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_create_bucket	src/bucket.c	/^void S3_create_bucket(S3Protocol protocol, const char *accessKeyId,$/;"	f
+S3_create_request_context	src/request_context.c	/^S3Status S3_create_request_context(S3RequestContext **requestContextReturn)$/;"	f
+S3_deinitialize	src/general.c	/^void S3_deinitialize()$/;"	f
+S3_delete_bucket	src/bucket.c	/^void S3_delete_bucket(S3Protocol protocol, S3UriStyle uriStyle,$/;"	f
+S3_delete_object	src/object.c	/^void S3_delete_object(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_destroy_request_context	src/request_context.c	/^void S3_destroy_request_context(S3RequestContext *requestContext)$/;"	f
+S3_generate_authenticated_query_string	src/request.c	/^S3Status S3_generate_authenticated_query_string$/;"	f
+S3_get_acl	src/acl.c	/^void S3_get_acl(const S3BucketContext *bucketContext, const char *key, $/;"	f
+S3_get_object	src/object.c	/^void S3_get_object(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_get_request_context_fdsets	src/request_context.c	/^S3Status S3_get_request_context_fdsets(S3RequestContext *requestContext,$/;"	f
+S3_get_request_context_timeout	src/request_context.c	/^int64_t S3_get_request_context_timeout(S3RequestContext *requestContext)$/;"	f
+S3_get_server_access_logging	src/service_access_logging.c	/^void S3_get_server_access_logging(const S3BucketContext *bucketContext,$/;"	f
+S3_get_status_name	src/general.c	/^const char *S3_get_status_name(S3Status status)$/;"	f
+S3_head_object	src/object.c	/^void S3_head_object(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_init	src/s3.c	/^static void S3_init()$/;"	f	file:
+S3_initialize	src/general.c	/^S3Status S3_initialize(const char *userAgentInfo, int flags,$/;"	f
+S3_list_bucket	src/bucket.c	/^void S3_list_bucket(const S3BucketContext *bucketContext, const char *prefix,$/;"	f
+S3_list_service	src/service.c	/^void S3_list_service(S3Protocol protocol, const char *accessKeyId,$/;"	f
+S3_put_object	src/object.c	/^void S3_put_object(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_runall_request_context	src/request_context.c	/^S3Status S3_runall_request_context(S3RequestContext *requestContext)$/;"	f
+S3_runonce_request_context	src/request_context.c	/^S3Status S3_runonce_request_context(S3RequestContext *requestContext, $/;"	f
+S3_set_acl	src/acl.c	/^void S3_set_acl(const S3BucketContext *bucketContext, const char *key,$/;"	f
+S3_set_server_access_logging	src/service_access_logging.c	/^void S3_set_server_access_logging(const S3BucketContext *bucketContext,$/;"	f
+S3_status_is_retryable	src/general.c	/^int S3_status_is_retryable(S3Status status)$/;"	f
+S3_test_bucket	src/bucket.c	/^void S3_test_bucket(S3Protocol protocol, S3UriStyle uriStyle,$/;"	f
+S3_validate_bucket_name	src/general.c	/^S3Status S3_validate_bucket_name(const char *bucketName, S3UriStyle uriStyle)$/;"	f
+SHA1Context	src/util.c	/^} SHA1Context;$/;"	t	typeref:struct:__anon1	file:
+SHA1_final	src/util.c	/^static void SHA1_final(unsigned char digest[20], SHA1Context *context)$/;"	f	file:
+SHA1_init	src/util.c	/^static void SHA1_init(SHA1Context *context)$/;"	f	file:
+SHA1_transform	src/util.c	/^static void SHA1_transform(uint32_t state[5], const unsigned char buffer[64])$/;"	f	file:
+SHA1_update	src/util.c	/^static void SHA1_update(SHA1Context *context, const unsigned char *data,$/;"	f	file:
+SIMPLEXML_H	inc/simplexml.h	28;"	d
+SKIP_SPACE	src/s3.c	558;"	d	file:
+SLEEP_UNITS_PER_SECOND	src/s3.c	51;"	d	file:
+START_BYTE_PREFIX	src/s3.c	126;"	d	file:
+START_BYTE_PREFIX_LEN	src/s3.c	127;"	d	file:
+STRING_BUFFER_H	inc/string_buffer.h	28;"	d
+SetAclData	src/acl.c	/^typedef struct SetAclData$/;"	s	file:
+SetAclData	src/acl.c	/^} SetAclData;$/;"	t	typeref:struct:SetAclData	file:
+SetSalData	src/service_access_logging.c	/^typedef struct SetSalData$/;"	s	file:
+SetSalData	src/service_access_logging.c	/^} SetSalData;$/;"	t	typeref:struct:SetSalData	file:
+SimpleXml	inc/simplexml.h	/^typedef struct SimpleXml$/;"	s
+SimpleXml	inc/simplexml.h	/^} SimpleXml;$/;"	t	typeref:struct:SimpleXml
+SimpleXmlCallback	inc/simplexml.h	/^typedef S3Status (SimpleXmlCallback)(const char *elementPath, const char *data,$/;"	t
+TARGET_BUCKET_PREFIX	src/s3.c	136;"	d	file:
+TARGET_BUCKET_PREFIX_LEN	src/s3.c	137;"	d	file:
+TARGET_PREFIX_PREFIX	src/s3.c	138;"	d	file:
+TARGET_PREFIX_PREFIX_LEN	src/s3.c	139;"	d	file:
+TestBucketData	src/bucket.c	/^typedef struct TestBucketData$/;"	s	file:
+TestBucketData	src/bucket.c	/^} TestBucketData;$/;"	t	typeref:struct:TestBucketData	file:
+USER_AGENT_SIZE	src/request.c	38;"	d	file:
+UTIL_H	inc/util.h	28;"	d
+UTSNAME_H	inc/mingw/sys/utsname.h	31;"	d
+VERBOSE	GNUmakefile	/^        VERBOSE = false$/;"	m
+VERBOSE	GNUmakefile	/^        VERBOSE = true$/;"	m
+VERBOSE_ECHO	GNUmakefile	/^        VERBOSE_ECHO = @ echo > \/dev\/null$/;"	m
+VERBOSE_ECHO	GNUmakefile	/^        VERBOSE_ECHO = @ echo$/;"	m
+VERBOSE_SHOW	GNUmakefile	/^        VERBOSE_SHOW = @$/;"	m
+VERBOSE_SHOW	GNUmakefile	/^        VERBOSE_SHOW =$/;"	m
+X_AMZ_META_PREFIX	src/s3.c	115;"	d	file:
+X_AMZ_META_PREFIX_LEN	src/s3.c	116;"	d	file:
+XmlCallbackData	src/service.c	/^typedef struct XmlCallbackData$/;"	s	file:
+XmlCallbackData	src/service.c	/^} XmlCallbackData;$/;"	t	typeref:struct:XmlCallbackData	file:
+accessKeyId	inc/libs3.h	/^    const char *accessKeyId;$/;"	m	struct:S3BucketContext
+accessKeyIdG	src/s3.c	/^static const char *accessKeyIdG = 0;$/;"	v	file:
+aclGrantCountReturn	src/acl.c	/^    int *aclGrantCountReturn;$/;"	m	struct:GetAclData	file:
+aclGrantCountReturn	src/general.c	/^    int *aclGrantCountReturn;$/;"	m	struct:ConvertAclData	file:
+aclGrantCountReturn	src/service_access_logging.c	/^    int *aclGrantCountReturn;$/;"	m	struct:ConvertBlsData	file:
+aclGrantCountReturn	src/service_access_logging.c	/^    int *aclGrantCountReturn;$/;"	m	struct:GetBlsData	file:
+aclGrants	src/acl.c	/^    S3AclGrant *aclGrants;$/;"	m	struct:GetAclData	file:
+aclGrants	src/general.c	/^    S3AclGrant *aclGrants;$/;"	m	struct:ConvertAclData	file:
+aclGrants	src/service_access_logging.c	/^    S3AclGrant *aclGrants;$/;"	m	struct:ConvertBlsData	file:
+aclGrants	src/service_access_logging.c	/^    S3AclGrant *aclGrants;$/;"	m	struct:GetBlsData	file:
+aclXmlDocument	src/acl.c	/^    char aclXmlDocument[ACL_XML_DOC_MAXSIZE];$/;"	m	struct:SetAclData	file:
+aclXmlDocumentBytesWritten	src/acl.c	/^    int aclXmlDocumentBytesWritten;$/;"	m	struct:SetAclData	file:
+aclXmlDocumentLen	src/acl.c	/^    int aclXmlDocumentLen;$/;"	m	struct:SetAclData	file:
+allDetails	src/s3.c	/^    int allDetails;$/;"	m	struct:list_bucket_callback_data	file:
+allDetails	src/s3.c	/^    int allDetails;$/;"	m	struct:list_service_data	file:
+amazonCustomerByEmail	inc/libs3.h	/^        } amazonCustomerByEmail;$/;"	m	union:S3AclGrant::__anon9	typeref:struct:S3AclGrant::__anon9::__anon10
+amzHeaders	src/request.c	/^    char *amzHeaders[S3_MAX_METADATA_COUNT + 2]; \/\/ + 2 for acl and date$/;"	m	struct:RequestComputedValues	file:
+amzHeadersCount	src/request.c	/^    int amzHeadersCount;$/;"	m	struct:RequestComputedValues	file:
+amzHeadersRaw	src/request.c	/^    char amzHeadersRaw[COMPACTED_METADATA_BUFFER_SIZE + 256 + 1];$/;"	m	struct:RequestComputedValues	file:
+append	src/acl.c	165;"	d	file:
+append	src/request.c	648;"	d	file:
+append	src/service_access_logging.c	367;"	d	file:
+append_standard_header	src/request.c	871;"	d	file:
+authorizationHeader	src/request.c	/^    char authorizationHeader[128];$/;"	m	struct:RequestComputedValues	file:
+base64Encode	src/util.c	/^int base64Encode(const unsigned char *in, int inLen, char *out)$/;"	f
+blk	src/util.c	215;"	d	file:
+blk0B	src/util.c	213;"	d	file:
+blk0L	src/util.c	210;"	d	file:
+bucketContext	inc/request.h	/^    S3BucketContext bucketContext;$/;"	m	struct:RequestParams
+bucketName	inc/libs3.h	/^    const char *bucketName;$/;"	m	struct:S3BucketContext
+buffer	src/util.c	/^    unsigned char buffer[64];$/;"	m	struct:__anon1	file:
+byteCount	inc/request.h	/^    uint64_t byteCount;$/;"	m	struct:RequestParams
+cacheControl	inc/libs3.h	/^    const char *cacheControl;$/;"	m	struct:S3PutProperties
+cacheControlHeader	src/request.c	/^    char cacheControlHeader[128];$/;"	m	struct:RequestComputedValues	file:
+callback	inc/simplexml.h	/^    SimpleXmlCallback *callback;$/;"	m	struct:SimpleXml
+callbackData	inc/request.h	/^    void *callbackData;$/;"	m	struct:Request
+callbackData	inc/request.h	/^    void *callbackData;$/;"	m	struct:RequestParams
+callbackData	inc/simplexml.h	/^    void *callbackData;$/;"	m	struct:SimpleXml
+callbackData	src/acl.c	/^    void *callbackData;$/;"	m	struct:GetAclData	file:
+callbackData	src/acl.c	/^    void *callbackData;$/;"	m	struct:SetAclData	file:
+callbackData	src/bucket.c	/^    void *callbackData;$/;"	m	struct:CreateBucketData	file:
+callbackData	src/bucket.c	/^    void *callbackData;$/;"	m	struct:DeleteBucketData	file:
+callbackData	src/bucket.c	/^    void *callbackData;$/;"	m	struct:ListBucketData	file:
+callbackData	src/bucket.c	/^    void *callbackData;$/;"	m	struct:TestBucketData	file:
+callbackData	src/object.c	/^    void *callbackData;$/;"	m	struct:CopyObjectData	file:
+callbackData	src/service.c	/^    void *callbackData;$/;"	m	struct:XmlCallbackData	file:
+callbackData	src/service_access_logging.c	/^    void *callbackData;$/;"	m	struct:GetBlsData	file:
+callbackData	src/service_access_logging.c	/^    void *callbackData;$/;"	m	struct:SetSalData	file:
+cannedAcl	inc/libs3.h	/^    S3CannedAcl cannedAcl;$/;"	m	struct:S3PutProperties
+canonicalUser	inc/libs3.h	/^        } canonicalUser;$/;"	m	union:S3AclGrant::__anon9	typeref:struct:S3AclGrant::__anon9::__anon11
+canonicalize_amz_headers	src/request.c	/^static void canonicalize_amz_headers(RequestComputedValues *values)$/;"	f	file:
+canonicalize_resource	src/request.c	/^static void canonicalize_resource(const char *bucketName,$/;"	f	file:
+canonicalizedResource	src/request.c	/^    char canonicalizedResource[MAX_CANONICALIZED_RESOURCE_SIZE + 1];$/;"	m	struct:RequestComputedValues	file:
+checkString	src/s3.c	/^static int checkString(const char *str, const char *format)$/;"	f	file:
+checkString	src/util.c	/^static int checkString(const char *str, const char *format)$/;"	f	file:
+commonPrefixLens	src/bucket.c	/^    int commonPrefixLens[MAX_COMMON_PREFIXES];$/;"	m	struct:ListBucketData	file:
+commonPrefixes	src/bucket.c	/^    char commonPrefixes[MAX_COMMON_PREFIXES][1024];$/;"	m	struct:ListBucketData	file:
+commonPrefixesCount	src/bucket.c	/^    int commonPrefixesCount;$/;"	m	struct:ListBucketData	file:
+completeCallback	inc/libs3.h	/^    S3ResponseCompleteCallback *completeCallback;$/;"	m	struct:S3ResponseHandler
+completeCallback	inc/request.h	/^    S3ResponseCompleteCallback *completeCallback;$/;"	m	struct:Request
+completeCallback	inc/request.h	/^    S3ResponseCompleteCallback *completeCallback;$/;"	m	struct:RequestParams
+completeCallback	src/service.c	/^static void completeCallback(S3Status requestStatus,$/;"	f	file:
+compose_amz_headers	src/request.c	/^static S3Status compose_amz_headers(const RequestParams *params,$/;"	f	file:
+compose_auth_header	src/request.c	/^static S3Status compose_auth_header(const RequestParams *params,$/;"	f	file:
+compose_standard_headers	src/request.c	/^static S3Status compose_standard_headers(const RequestParams *params,$/;"	f	file:
+compose_uri	src/request.c	/^static S3Status compose_uri(char *buffer, int bufferSize,$/;"	f	file:
+contentDispositionFilename	inc/libs3.h	/^    const char *contentDispositionFilename;$/;"	m	struct:S3PutProperties
+contentDispositionHeader	src/request.c	/^    char contentDispositionHeader[128];$/;"	m	struct:RequestComputedValues	file:
+contentEncoding	inc/libs3.h	/^    const char *contentEncoding;$/;"	m	struct:S3PutProperties
+contentEncodingHeader	src/request.c	/^    char contentEncodingHeader[128];$/;"	m	struct:RequestComputedValues	file:
+contentLength	inc/libs3.h	/^    uint64_t contentLength;$/;"	m	struct:S3ResponseProperties
+contentLength	src/s3.c	/^    uint64_t contentLength, originalContentLength;$/;"	m	struct:put_object_callback_data	file:
+contentType	inc/libs3.h	/^    const char *contentType;$/;"	m	struct:S3PutProperties
+contentType	inc/libs3.h	/^    const char *contentType;$/;"	m	struct:S3ResponseProperties
+contentTypeHeader	src/request.c	/^    char contentTypeHeader[128];$/;"	m	struct:RequestComputedValues	file:
+contents	src/bucket.c	/^    ListBucketContents contents[MAX_CONTENTS];$/;"	m	struct:ListBucketData	file:
+contentsCount	src/bucket.c	/^    int contentsCount;$/;"	m	struct:ListBucketData	file:
+convertAclXmlCallback	src/general.c	/^static S3Status convertAclXmlCallback(const char *elementPath,$/;"	f	file:
+convertBlsXmlCallback	src/service_access_logging.c	/^static S3Status convertBlsXmlCallback(const char *elementPath,$/;"	f	file:
+convertInt	src/s3.c	/^static uint64_t convertInt(const char *str, const char *paramName)$/;"	f	file:
+convert_bls	src/service_access_logging.c	/^static S3Status convert_bls(char *blsXml, char *targetBucketReturn,$/;"	f	file:
+convert_simple_acl	src/s3.c	/^static int convert_simple_acl(char *aclXml, char *ownerId,$/;"	f	file:
+copyObjectCompleteCallback	src/object.c	/^static void copyObjectCompleteCallback(S3Status requestStatus, $/;"	f	file:
+copyObjectDataCallback	src/object.c	/^static S3Status copyObjectDataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+copyObjectPropertiesCallback	src/object.c	/^static S3Status copyObjectPropertiesCallback$/;"	f	file:
+copyObjectXmlCallback	src/object.c	/^static S3Status copyObjectXmlCallback(const char *elementPath,$/;"	f	file:
+copySourceBucketName	inc/request.h	/^    const char *copySourceBucketName;$/;"	m	struct:RequestParams
+copySourceKey	inc/request.h	/^    const char *copySourceKey;$/;"	m	struct:RequestParams
+copy_object	src/s3.c	/^static void copy_object(int argc, char **argv, int optindex)$/;"	f	file:
+count	src/util.c	/^    uint32_t count[2];$/;"	m	struct:__anon1	file:
+createBucketCompleteCallback	src/bucket.c	/^static void createBucketCompleteCallback(S3Status requestStatus, $/;"	f	file:
+createBucketDataCallback	src/bucket.c	/^static int createBucketDataCallback(int bufferSize, char *buffer, $/;"	f	file:
+createBucketPropertiesCallback	src/bucket.c	/^static S3Status createBucketPropertiesCallback$/;"	f	file:
+create_bucket	src/s3.c	/^static void create_bucket(int argc, char **argv, int optindex)$/;"	f	file:
+criticalSection	inc/mingw/pthread.h	/^    CRITICAL_SECTION criticalSection;$/;"	m	struct:__anon2
+curl	inc/request.h	/^    CURL *curl;$/;"	m	struct:Request
+curl_easy_setopt_safe	src/request.c	800;"	d	file:
+curl_header_func	src/request.c	/^static size_t curl_header_func(void *ptr, size_t size, size_t nmemb,$/;"	f	file:
+curl_read_func	src/request.c	/^static size_t curl_read_func(void *ptr, size_t size, size_t nmemb, void *data)$/;"	f	file:
+curl_write_func	src/request.c	/^static size_t curl_write_func(void *ptr, size_t size, size_t nmemb,$/;"	f	file:
+curlm	inc/request_context.h	/^    CURLM *curlm;$/;"	m	struct:S3RequestContext
+data	src/s3.c	/^    char data[64 * 1024];$/;"	m	struct:growbuffer	file:
+dataCallback	src/service.c	/^static S3Status dataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+defaultHostNameG	src/request.c	/^char defaultHostNameG[S3_MAX_HOSTNAME_SIZE];$/;"	v
+deleteBucketCompleteCallback	src/bucket.c	/^static void deleteBucketCompleteCallback(S3Status requestStatus, $/;"	f	file:
+deleteBucketPropertiesCallback	src/bucket.c	/^static S3Status deleteBucketPropertiesCallback$/;"	f	file:
+delete_bucket	src/s3.c	/^static void delete_bucket(int argc, char **argv, int optindex)$/;"	f	file:
+delete_object	src/s3.c	/^static void delete_object(int argc, char **argv, int optindex)$/;"	f	file:
+displayName	inc/libs3.h	/^            char displayName[S3_MAX_GRANTEE_DISPLAY_NAME_SIZE];$/;"	m	struct:S3AclGrant::__anon9::__anon11
+do_get_header	src/request.c	393;"	d	file:
+do_put_header	src/request.c	363;"	d	file:
+doc	src/bucket.c	/^    char doc[1024];$/;"	m	struct:CreateBucketData	file:
+docBytesWritten	src/bucket.c	/^    int docLen, docBytesWritten;$/;"	m	struct:CreateBucketData	file:
+docLen	src/bucket.c	/^    int docLen, docBytesWritten;$/;"	m	struct:CreateBucketData	file:
+done	inc/response_headers_handler.h	/^    int done;$/;"	m	struct:ResponseHeadersHandler
+eTag	inc/libs3.h	/^    const char *eTag;$/;"	m	struct:S3ListBucketContent
+eTag	inc/libs3.h	/^    const char *eTag;$/;"	m	struct:S3ResponseProperties
+eTagReturn	src/object.c	/^    char *eTagReturn;$/;"	m	struct:CopyObjectData	file:
+eTagReturnLen	src/object.c	/^    int eTagReturnLen;$/;"	m	struct:CopyObjectData	file:
+eTagReturnSize	src/object.c	/^    int eTagReturnSize;$/;"	m	struct:CopyObjectData	file:
+elementPath	inc/simplexml.h	/^    char elementPath[512];$/;"	m	struct:SimpleXml
+elementPathLen	inc/simplexml.h	/^    int elementPathLen;$/;"	m	struct:SimpleXml
+emailAddress	inc/libs3.h	/^            char emailAddress[S3_MAX_GRANTEE_EMAIL_ADDRESS_SIZE];$/;"	m	struct:S3AclGrant::__anon9::__anon10
+encode_key	src/request.c	/^static S3Status encode_key(const RequestParams *params,$/;"	f	file:
+errorDetailsG	src/s3.c	/^static char errorDetailsG[4096] = { 0 };$/;"	v	file:
+errorParser	inc/request.h	/^    ErrorParser errorParser;$/;"	m	struct:Request
+errorXmlCallback	src/error_parser.c	/^static S3Status errorXmlCallback(const char *elementPath, const char *data,$/;"	f	file:
+errorXmlParser	inc/error_parser.h	/^    SimpleXml errorXmlParser;$/;"	m	struct:ErrorParser
+errorXmlParserInitialized	inc/error_parser.h	/^    int errorXmlParserInitialized;$/;"	m	struct:ErrorParser
+error_parser_add	src/error_parser.c	/^S3Status error_parser_add(ErrorParser *errorParser, char *buffer,$/;"	f
+error_parser_convert_status	src/error_parser.c	/^void error_parser_convert_status(ErrorParser *errorParser, S3Status *status)$/;"	f
+error_parser_deinitialize	src/error_parser.c	/^void error_parser_deinitialize(ErrorParser *errorParser)$/;"	f
+error_parser_initialize	src/error_parser.c	/^void error_parser_initialize(ErrorParser *errorParser)$/;"	f
+expires	inc/libs3.h	/^    int64_t expires;$/;"	m	struct:S3PutProperties
+expiresHeader	src/request.c	/^    char expiresHeader[128];$/;"	m	struct:RequestComputedValues	file:
+extraDetails	inc/error_parser.h	/^    S3NameValue extraDetails[EXTRA_DETAILS_SIZE];$/;"	m	struct:ErrorParser
+extraDetails	inc/libs3.h	/^    S3NameValue *extraDetails;$/;"	m	struct:S3ErrorDetails
+extraDetailsCount	inc/libs3.h	/^    int extraDetailsCount;$/;"	m	struct:S3ErrorDetails
+forceG	src/s3.c	/^static int forceG = 0;$/;"	v	file:
+fromS3Callback	inc/request.h	/^    S3GetObjectDataCallback *fromS3Callback;$/;"	m	struct:Request
+fromS3Callback	inc/request.h	/^    S3GetObjectDataCallback *fromS3Callback;$/;"	m	struct:RequestParams
+furtherDetails	inc/libs3.h	/^    const char *furtherDetails;$/;"	m	struct:S3ErrorDetails
+gb	src/s3.c	/^    growbuffer *gb;$/;"	m	struct:put_object_callback_data	file:
+generateAclXmlDocument	src/acl.c	/^static S3Status generateAclXmlDocument(const char *ownerId, $/;"	f	file:
+generateSalXmlDocument	src/service_access_logging.c	/^static S3Status generateSalXmlDocument(const char *targetBucket,$/;"	f	file:
+generate_query_string	src/s3.c	/^static void generate_query_string(int argc, char **argv, int optindex)$/;"	f	file:
+getAclCompleteCallback	src/acl.c	/^static void getAclCompleteCallback(S3Status requestStatus, $/;"	f	file:
+getAclDataCallback	src/acl.c	/^static S3Status getAclDataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+getAclPropertiesCallback	src/acl.c	/^static S3Status getAclPropertiesCallback$/;"	f	file:
+getBlsCompleteCallback	src/service_access_logging.c	/^static void getBlsCompleteCallback(S3Status requestStatus, $/;"	f	file:
+getBlsDataCallback	src/service_access_logging.c	/^static S3Status getBlsDataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+getBlsPropertiesCallback	src/service_access_logging.c	/^static S3Status getBlsPropertiesCallback$/;"	f	file:
+getConditions	inc/request.h	/^    const S3GetConditions *getConditions;$/;"	m	struct:RequestParams
+getObjectDataCallback	inc/libs3.h	/^    S3GetObjectDataCallback *getObjectDataCallback;$/;"	m	struct:S3GetObjectHandler
+getObjectDataCallback	src/s3.c	/^static S3Status getObjectDataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+get_acl	src/s3.c	/^void get_acl(int argc, char **argv, int optindex)$/;"	f
+get_logging	src/s3.c	/^void get_logging(int argc, char **argv, int optindex)$/;"	f
+get_object	src/s3.c	/^static void get_object(int argc, char **argv, int optindex)$/;"	f	file:
+grantee	inc/libs3.h	/^    } grantee;$/;"	m	struct:S3AclGrant	typeref:union:S3AclGrant::__anon9
+granteeType	inc/libs3.h	/^    S3GranteeType granteeType;$/;"	m	struct:S3AclGrant
+growbuffer	src/s3.c	/^typedef struct growbuffer$/;"	s	file:
+growbuffer	src/s3.c	/^} growbuffer;$/;"	t	typeref:struct:growbuffer	file:
+growbuffer_append	src/s3.c	/^static int growbuffer_append(growbuffer **gb, const char *data, int dataLen)$/;"	f	file:
+growbuffer_destroy	src/s3.c	/^static void growbuffer_destroy(growbuffer *gb)$/;"	f	file:
+growbuffer_read	src/s3.c	/^static void growbuffer_read(growbuffer **gb, int amt, int *amtReturn, $/;"	f	file:
+handlecase	src/general.c	58;"	d	file:
+hash	src/util.c	/^uint64_t hash(const unsigned char *k, int length)$/;"	f
+head_object	src/s3.c	/^static void head_object(int argc, char **argv, int optindex)$/;"	f	file:
+headerPrinted	src/s3.c	/^    int headerPrinted;$/;"	m	struct:list_service_data	file:
+header_gnome_sort	src/request.c	/^static void header_gnome_sort(const char **headers, int size)$/;"	f	file:
+header_name_tolower_copy	src/request.c	279;"	d	file:
+headerle	src/request.c	/^static int headerle(const char *header1, const char *header2)$/;"	f	file:
+headers	inc/request.h	/^    struct curl_slist *headers;$/;"	m	struct:Request	typeref:struct:Request::curl_slist
+headers_append	src/request.c	261;"	d	file:
+hostName	inc/libs3.h	/^    const char *hostName;$/;"	m	struct:S3BucketContext
+httpRequestType	inc/request.h	/^    HttpRequestType httpRequestType;$/;"	m	struct:RequestParams
+httpResponseCode	inc/request.h	/^    int httpResponseCode;$/;"	m	struct:Request
+http_request_type_to_verb	src/request.c	/^static const char *http_request_type_to_verb(HttpRequestType requestType)$/;"	f	file:
+id	inc/libs3.h	/^            char id[S3_MAX_GRANTEE_USER_ID_SIZE];$/;"	m	struct:S3AclGrant::__anon9::__anon11
+ifMatchETag	inc/libs3.h	/^    const char *ifMatchETag;$/;"	m	struct:S3GetConditions
+ifMatchHeader	src/request.c	/^    char ifMatchHeader[128];$/;"	m	struct:RequestComputedValues	file:
+ifModifiedSince	inc/libs3.h	/^    int64_t ifModifiedSince;$/;"	m	struct:S3GetConditions
+ifModifiedSinceHeader	src/request.c	/^    char ifModifiedSinceHeader[128];$/;"	m	struct:RequestComputedValues	file:
+ifNoneMatchHeader	src/request.c	/^    char ifNoneMatchHeader[128];$/;"	m	struct:RequestComputedValues	file:
+ifNotMatchETag	inc/libs3.h	/^    const char *ifNotMatchETag;$/;"	m	struct:S3GetConditions
+ifNotModifiedSince	inc/libs3.h	/^    int64_t ifNotModifiedSince;$/;"	m	struct:S3GetConditions
+ifUnmodifiedSinceHeader	src/request.c	/^    char ifUnmodifiedSinceHeader[128];$/;"	m	struct:RequestComputedValues	file:
+infile	src/s3.c	/^    FILE *infile;$/;"	m	struct:put_object_callback_data	file:
+initializeCountG	src/general.c	/^static int initializeCountG = 0;$/;"	v	file:
+initialize_list_bucket_contents	src/bucket.c	/^static void initialize_list_bucket_contents(ListBucketContents *contents)$/;"	f	file:
+initialize_list_bucket_data	src/bucket.c	/^static void initialize_list_bucket_data(ListBucketData *lbData)$/;"	f	file:
+isTruncated	src/s3.c	/^    int isTruncated;$/;"	m	struct:list_bucket_callback_data	file:
+is_blank	src/util.c	/^int is_blank(char c)$/;"	f
+key	inc/libs3.h	/^    const char *key;$/;"	m	struct:S3ListBucketContent
+key	inc/request.h	/^    const char *key;$/;"	m	struct:RequestParams
+keyCount	src/s3.c	/^    int keyCount;$/;"	m	struct:list_bucket_callback_data	file:
+lastModified	inc/libs3.h	/^    int64_t lastModified;$/;"	m	struct:S3ListBucketContent
+lastModified	inc/libs3.h	/^    int64_t lastModified;$/;"	m	struct:S3ResponseProperties
+lastModifiedReturn	src/object.c	/^    int64_t *lastModifiedReturn;$/;"	m	struct:CopyObjectData	file:
+list	src/s3.c	/^static void list(int argc, char **argv, int optindex)$/;"	f	file:
+listBucketCallback	inc/libs3.h	/^    S3ListBucketCallback *listBucketCallback;$/;"	m	struct:S3ListBucketHandler
+listBucketCallback	src/bucket.c	/^    S3ListBucketCallback *listBucketCallback;$/;"	m	struct:ListBucketData	file:
+listBucketCallback	src/s3.c	/^static S3Status listBucketCallback(int isTruncated, const char *nextMarker,$/;"	f	file:
+listBucketCompleteCallback	src/bucket.c	/^static void listBucketCompleteCallback(S3Status requestStatus, $/;"	f	file:
+listBucketDataCallback	src/bucket.c	/^static S3Status listBucketDataCallback(int bufferSize, const char *buffer, $/;"	f	file:
+listBucketPropertiesCallback	src/bucket.c	/^static S3Status listBucketPropertiesCallback$/;"	f	file:
+listBucketXmlCallback	src/bucket.c	/^static S3Status listBucketXmlCallback(const char *elementPath,$/;"	f	file:
+listServiceCallback	inc/libs3.h	/^    S3ListServiceCallback *listServiceCallback;$/;"	m	struct:S3ListServiceHandler
+listServiceCallback	src/s3.c	/^static S3Status listServiceCallback(const char *ownerId, $/;"	f	file:
+listServiceCallback	src/service.c	/^    S3ListServiceCallback *listServiceCallback;$/;"	m	struct:XmlCallbackData	file:
+list_bucket	src/s3.c	/^static void list_bucket(const char *bucketName, const char *prefix,$/;"	f	file:
+list_bucket_callback_data	src/s3.c	/^typedef struct list_bucket_callback_data$/;"	s	file:
+list_bucket_callback_data	src/s3.c	/^} list_bucket_callback_data;$/;"	t	typeref:struct:list_bucket_callback_data	file:
+list_service	src/s3.c	/^static void list_service(int allDetails)$/;"	f	file:
+list_service_data	src/s3.c	/^typedef struct list_service_data$/;"	s	file:
+list_service_data	src/s3.c	/^} list_service_data;$/;"	t	typeref:struct:list_service_data	file:
+locationConstraintReturn	src/bucket.c	/^    char *locationConstraintReturn;$/;"	m	struct:TestBucketData	file:
+locationConstraintReturnSize	src/bucket.c	/^    int locationConstraintReturnSize;$/;"	m	struct:TestBucketData	file:
+longOptionsG	src/s3.c	/^static struct option longOptionsG[] =$/;"	v	typeref:struct:option	file:
+machine	inc/mingw/sys/utsname.h	/^    const char *machine;$/;"	m	struct:utsname
+main	src/s3.c	/^int main(int argc, char **argv)$/;"	f
+main	src/testsimplexml.c	/^int main(int argc, char **argv)$/;"	f
+make_list_bucket_callback	src/bucket.c	/^static S3Status make_list_bucket_callback(ListBucketData *lbData)$/;"	f	file:
+md5	inc/libs3.h	/^    const char *md5;$/;"	m	struct:S3PutProperties
+md5Header	src/request.c	/^    char md5Header[128];$/;"	m	struct:RequestComputedValues	file:
+message	inc/libs3.h	/^    const char *message;$/;"	m	struct:S3ErrorDetails
+metaData	inc/libs3.h	/^    const S3NameValue *metaData;$/;"	m	struct:S3PutProperties
+metaData	inc/libs3.h	/^    const S3NameValue *metaData;$/;"	m	struct:S3ResponseProperties
+metaDataCount	inc/libs3.h	/^    int metaDataCount;$/;"	m	struct:S3PutProperties
+metaDataCount	inc/libs3.h	/^    int metaDataCount;$/;"	m	struct:S3ResponseProperties
+name	inc/libs3.h	/^    const char *name;$/;"	m	struct:S3NameValue
+next	inc/request.h	/^    struct Request *prev, *next;$/;"	m	struct:Request	typeref:struct:Request::
+next	src/s3.c	/^    struct growbuffer *prev, *next;$/;"	m	struct:growbuffer	typeref:struct:growbuffer::	file:
+nextMarker	src/s3.c	/^    char nextMarker[1024];$/;"	m	struct:list_bucket_callback_data	file:
+nextnum	src/s3.c	480;"	d	file:
+nextnum	src/util.c	99;"	d	file:
+noStatus	src/s3.c	/^    int noStatus;$/;"	m	struct:put_object_callback_data	file:
+originalContentLength	src/s3.c	/^    uint64_t contentLength, originalContentLength;$/;"	m	struct:put_object_callback_data	file:
+ownerDisplayName	inc/libs3.h	/^    const char *ownerDisplayName;$/;"	m	struct:S3ListBucketContent
+ownerDisplayName	src/acl.c	/^    char *ownerDisplayName;$/;"	m	struct:GetAclData	file:
+ownerDisplayName	src/general.c	/^    char *ownerDisplayName;$/;"	m	struct:ConvertAclData	file:
+ownerDisplayNameLen	src/general.c	/^    int ownerDisplayNameLen;$/;"	m	struct:ConvertAclData	file:
+ownerId	inc/libs3.h	/^    const char *ownerId;$/;"	m	struct:S3ListBucketContent
+ownerId	src/acl.c	/^    char *ownerId;$/;"	m	struct:GetAclData	file:
+ownerId	src/general.c	/^    char *ownerId;$/;"	m	struct:ConvertAclData	file:
+ownerIdLen	src/general.c	/^    int ownerIdLen;$/;"	m	struct:ConvertAclData	file:
+parseIso8601Time	src/s3.c	/^static int64_t parseIso8601Time(const char *str)$/;"	f	file:
+parseIso8601Time	src/util.c	/^int64_t parseIso8601Time(const char *str)$/;"	f
+parseUnsignedInt	src/util.c	/^uint64_t parseUnsignedInt(const char *str)$/;"	f
+permission	inc/libs3.h	/^    S3Permission permission;$/;"	m	struct:S3AclGrant
+prev	inc/request.h	/^    struct Request *prev, *next;$/;"	m	struct:Request	typeref:struct:Request::Request
+prev	src/s3.c	/^    struct growbuffer *prev, *next;$/;"	m	struct:growbuffer	typeref:struct:growbuffer::growbuffer	file:
+printError	src/s3.c	/^static void printError()$/;"	f	file:
+printListBucketHeader	src/s3.c	/^static void printListBucketHeader(int allDetails)$/;"	f	file:
+printListServiceHeader	src/s3.c	/^static void printListServiceHeader(int allDetails)$/;"	f	file:
+print_nonnull	src/s3.c	717;"	d	file:
+propertiesCallback	inc/libs3.h	/^    S3ResponsePropertiesCallback *propertiesCallback;$/;"	m	struct:S3ResponseHandler
+propertiesCallback	inc/request.h	/^    S3ResponsePropertiesCallback *propertiesCallback;$/;"	m	struct:Request
+propertiesCallback	inc/request.h	/^    S3ResponsePropertiesCallback *propertiesCallback;$/;"	m	struct:RequestParams
+propertiesCallback	src/service.c	/^static S3Status propertiesCallback$/;"	f	file:
+propertiesCallbackMade	inc/request.h	/^    int propertiesCallbackMade;$/;"	m	struct:Request
+protocol	inc/libs3.h	/^    S3Protocol protocol;$/;"	m	struct:S3BucketContext
+protocolG	src/s3.c	/^static S3Protocol protocolG = S3ProtocolHTTPS;$/;"	v	file:
+pthread_mutex_destroy	src/mingw_functions.c	/^int pthread_mutex_destroy(pthread_mutex_t *mutex)$/;"	f
+pthread_mutex_init	src/mingw_functions.c	/^int pthread_mutex_init(pthread_mutex_t *mutex, void *v)$/;"	f
+pthread_mutex_lock	src/mingw_functions.c	/^int pthread_mutex_lock(pthread_mutex_t *mutex)$/;"	f
+pthread_mutex_t	inc/mingw/pthread.h	/^} pthread_mutex_t;$/;"	t	typeref:struct:__anon2
+pthread_mutex_unlock	src/mingw_functions.c	/^int pthread_mutex_unlock(pthread_mutex_t *mutex)$/;"	f
+pthread_self	src/mingw_functions.c	/^unsigned long pthread_self()$/;"	f
+putObjectDataCallback	inc/libs3.h	/^    S3PutObjectDataCallback *putObjectDataCallback;$/;"	m	struct:S3PutObjectHandler
+putObjectDataCallback	src/s3.c	/^static int putObjectDataCallback(int bufferSize, char *buffer,$/;"	f	file:
+putProperties	inc/request.h	/^    const S3PutProperties *putProperties;$/;"	m	struct:RequestParams
+put_object	src/s3.c	/^static void put_object(int argc, char **argv, int optindex)$/;"	f	file:
+put_object_callback_data	src/s3.c	/^typedef struct put_object_callback_data$/;"	s	file:
+put_object_callback_data	src/s3.c	/^} put_object_callback_data;$/;"	t	typeref:struct:put_object_callback_data	file:
+putenvBufG	src/s3.c	/^static char putenvBufG[256];$/;"	v	file:
+queryParams	inc/request.h	/^    const char *queryParams;$/;"	m	struct:RequestParams
+rangeHeader	src/request.c	/^    char rangeHeader[128];$/;"	m	struct:RequestComputedValues	file:
+requestId	inc/libs3.h	/^    const char *requestId;$/;"	m	struct:S3ResponseProperties
+requestId2	inc/libs3.h	/^    const char *requestId2;$/;"	m	struct:S3ResponseProperties
+requestStackCountG	src/request.c	/^static int requestStackCountG;$/;"	v	file:
+requestStackG	src/request.c	/^static Request *requestStackG[REQUEST_STACK_SIZE];$/;"	v	file:
+requestStackMutexG	src/request.c	/^static pthread_mutex_t requestStackMutexG;$/;"	v	file:
+request_api_deinitialize	src/request.c	/^void request_api_deinitialize()$/;"	f
+request_api_initialize	src/request.c	/^S3Status request_api_initialize(const char *userAgentInfo, int flags,$/;"	f
+request_curl_code_to_status	src/request.c	/^S3Status request_curl_code_to_status(CURLcode code)$/;"	f
+request_deinitialize	src/request.c	/^static void request_deinitialize(Request *request)$/;"	f	file:
+request_destroy	src/request.c	/^static void request_destroy(Request *request)$/;"	f	file:
+request_finish	src/request.c	/^void request_finish(Request *request)$/;"	f
+request_get	src/request.c	/^static S3Status request_get(const RequestParams *params, $/;"	f	file:
+request_headers_done	src/request.c	/^static void request_headers_done(Request *request)$/;"	f	file:
+request_perform	src/request.c	/^void request_perform(const RequestParams *params, S3RequestContext *context)$/;"	f
+request_release	src/request.c	/^static void request_release(Request *request)$/;"	f	file:
+requests	inc/request_context.h	/^    struct Request *requests;$/;"	m	struct:S3RequestContext	typeref:struct:S3RequestContext::Request
+resource	inc/libs3.h	/^    const char *resource;$/;"	m	struct:S3ErrorDetails
+responseCompleteCallback	src/acl.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:GetAclData	file:
+responseCompleteCallback	src/acl.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:SetAclData	file:
+responseCompleteCallback	src/bucket.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:CreateBucketData	file:
+responseCompleteCallback	src/bucket.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:DeleteBucketData	file:
+responseCompleteCallback	src/bucket.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:ListBucketData	file:
+responseCompleteCallback	src/bucket.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:TestBucketData	file:
+responseCompleteCallback	src/object.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:CopyObjectData	file:
+responseCompleteCallback	src/s3.c	/^static void responseCompleteCallback(S3Status status,$/;"	f	file:
+responseCompleteCallback	src/service.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:XmlCallbackData	file:
+responseCompleteCallback	src/service_access_logging.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:GetBlsData	file:
+responseCompleteCallback	src/service_access_logging.c	/^    S3ResponseCompleteCallback *responseCompleteCallback;$/;"	m	struct:SetSalData	file:
+responseHandler	inc/libs3.h	/^    S3ResponseHandler responseHandler;$/;"	m	struct:S3GetObjectHandler
+responseHandler	inc/libs3.h	/^    S3ResponseHandler responseHandler;$/;"	m	struct:S3ListBucketHandler
+responseHandler	inc/libs3.h	/^    S3ResponseHandler responseHandler;$/;"	m	struct:S3ListServiceHandler
+responseHandler	inc/libs3.h	/^    S3ResponseHandler responseHandler;$/;"	m	struct:S3PutObjectHandler
+responseHeadersHandler	inc/request.h	/^    ResponseHeadersHandler responseHeadersHandler;$/;"	m	struct:Request
+responseMetaData	inc/response_headers_handler.h	/^    S3NameValue responseMetaData[S3_MAX_METADATA_COUNT];$/;"	m	struct:ResponseHeadersHandler
+responseProperties	inc/response_headers_handler.h	/^    S3ResponseProperties responseProperties;$/;"	m	struct:ResponseHeadersHandler
+responsePropertiesCallback	src/acl.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:GetAclData	file:
+responsePropertiesCallback	src/acl.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:SetAclData	file:
+responsePropertiesCallback	src/bucket.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:CreateBucketData	file:
+responsePropertiesCallback	src/bucket.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:DeleteBucketData	file:
+responsePropertiesCallback	src/bucket.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:ListBucketData	file:
+responsePropertiesCallback	src/bucket.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:TestBucketData	file:
+responsePropertiesCallback	src/object.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:CopyObjectData	file:
+responsePropertiesCallback	src/s3.c	/^static S3Status responsePropertiesCallback$/;"	f	file:
+responsePropertiesCallback	src/service.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:XmlCallbackData	file:
+responsePropertiesCallback	src/service_access_logging.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:GetBlsData	file:
+responsePropertiesCallback	src/service_access_logging.c	/^    S3ResponsePropertiesCallback *responsePropertiesCallback;$/;"	m	struct:SetSalData	file:
+response_headers_handler_add	src/response_headers_handler.c	/^void response_headers_handler_add(ResponseHeadersHandler *handler,$/;"	f
+response_headers_handler_done	src/response_headers_handler.c	/^void response_headers_handler_done(ResponseHeadersHandler *handler, CURL *curl)$/;"	f
+response_headers_handler_initialize	src/response_headers_handler.c	/^void response_headers_handler_initialize(ResponseHeadersHandler *handler)$/;"	f
+retriesG	src/s3.c	/^static int retriesG = 5;$/;"	v	file:
+return_status	src/request.c	1127;"	d	file:
+rol	src/util.c	208;"	d	file:
+rot	src/util.c	455;"	d	file:
+s3ErrorDetails	inc/error_parser.h	/^    S3ErrorDetails s3ErrorDetails;$/;"	m	struct:ErrorParser
+safe_append	src/bucket.c	641;"	d	file:
+salXmlDocument	src/service_access_logging.c	/^    char salXmlDocument[BLS_XML_DOC_MAXSIZE];$/;"	m	struct:SetSalData	file:
+salXmlDocumentBytesWritten	src/service_access_logging.c	/^    int salXmlDocumentBytesWritten;$/;"	m	struct:SetSalData	file:
+salXmlDocumentLen	src/service_access_logging.c	/^    int salXmlDocumentLen;$/;"	m	struct:SetSalData	file:
+saxCharacters	src/simplexml.c	/^static void saxCharacters(void *user_data, const xmlChar *ch, int len)$/;"	f	file:
+saxEndElement	src/simplexml.c	/^static void saxEndElement(void *user_data, const xmlChar *name)$/;"	f	file:
+saxError	src/simplexml.c	/^static void saxError(void *user_data, const char *msg, ...)$/;"	f	file:
+saxGetEntity	src/simplexml.c	/^static xmlEntityPtr saxGetEntity(void *user_data, const xmlChar *name)$/;"	f	file:
+saxHandlerG	src/simplexml.c	/^static struct _xmlSAXHandler saxHandlerG =$/;"	v	typeref:struct:_xmlSAXHandler	file:
+saxStartElement	src/simplexml.c	/^static void saxStartElement(void *user_data, const xmlChar *nameUtf8,$/;"	f	file:
+secretAccessKey	inc/libs3.h	/^    const char *secretAccessKey;$/;"	m	struct:S3BucketContext
+secretAccessKeyG	src/s3.c	/^static const char *secretAccessKeyG = 0;$/;"	v	file:
+server	inc/libs3.h	/^    const char *server;$/;"	m	struct:S3ResponseProperties
+setAclCompleteCallback	src/acl.c	/^static void setAclCompleteCallback(S3Status requestStatus, $/;"	f	file:
+setAclDataCallback	src/acl.c	/^static int setAclDataCallback(int bufferSize, char *buffer, void *callbackData)$/;"	f	file:
+setAclPropertiesCallback	src/acl.c	/^static S3Status setAclPropertiesCallback$/;"	f	file:
+setSalCompleteCallback	src/service_access_logging.c	/^static void setSalCompleteCallback(S3Status requestStatus, $/;"	f	file:
+setSalDataCallback	src/service_access_logging.c	/^static int setSalDataCallback(int bufferSize, char *buffer, void *callbackData)$/;"	f	file:
+setSalPropertiesCallback	src/service_access_logging.c	/^static S3Status setSalPropertiesCallback$/;"	f	file:
+set_acl	src/s3.c	/^void set_acl(int argc, char **argv, int optindex)$/;"	f
+set_logging	src/s3.c	/^void set_logging(int argc, char **argv, int optindex)$/;"	f
+setenv	src/mingw_s3_functions.c	/^int setenv(const char *a, const char *b, int c)$/;"	f
+setup_curl	src/request.c	/^static S3Status setup_curl(Request *request,$/;"	f	file:
+should_retry	src/s3.c	/^static int should_retry()$/;"	f	file:
+showResponsePropertiesG	src/s3.c	/^static int showResponsePropertiesG = 0;$/;"	v	file:
+signbuf_append	src/request.c	1356;"	d	file:
+signbuf_append	src/request.c	700;"	d	file:
+simpleXml	src/acl.c	/^    SimpleXml simpleXml;$/;"	m	struct:GetAclData	file:
+simpleXml	src/bucket.c	/^    SimpleXml simpleXml;$/;"	m	struct:ListBucketData	file:
+simpleXml	src/bucket.c	/^    SimpleXml simpleXml;$/;"	m	struct:TestBucketData	file:
+simpleXml	src/object.c	/^    SimpleXml simpleXml;$/;"	m	struct:CopyObjectData	file:
+simpleXml	src/service.c	/^    SimpleXml simpleXml;$/;"	m	struct:XmlCallbackData	file:
+simpleXml	src/service_access_logging.c	/^    SimpleXml simpleXml;$/;"	m	struct:GetBlsData	file:
+simpleXmlCallback	src/testsimplexml.c	/^static S3Status simpleXmlCallback(const char *elementPath, const char *data,$/;"	f	file:
+simplexml_add	src/simplexml.c	/^S3Status simplexml_add(SimpleXml *simpleXml, const char *data, int dataLen)$/;"	f
+simplexml_deinitialize	src/simplexml.c	/^void simplexml_deinitialize(SimpleXml *simpleXml)$/;"	f
+simplexml_initialize	src/simplexml.c	/^void simplexml_initialize(SimpleXml *simpleXml, $/;"	f
+size	inc/libs3.h	/^    uint64_t size;$/;"	m	struct:S3ListBucketContent
+size	src/s3.c	/^    int size;$/;"	m	struct:growbuffer	file:
+start	src/s3.c	/^    int start;$/;"	m	struct:growbuffer	file:
+startByte	inc/request.h	/^    uint64_t startByte;$/;"	m	struct:RequestParams
+state	src/util.c	/^    uint32_t state[5];$/;"	m	struct:__anon1	file:
+status	inc/request.h	/^    S3Status status;$/;"	m	struct:Request
+status	inc/simplexml.h	/^    S3Status status;$/;"	m	struct:SimpleXml
+statusG	src/s3.c	/^static int statusG = 0;$/;"	v	file:
+string_buffer	inc/string_buffer.h	34;"	d
+string_buffer_append	inc/string_buffer.h	49;"	d
+string_buffer_initialize	inc/string_buffer.h	40;"	d
+string_multibuffer	inc/string_buffer.h	64;"	d
+string_multibuffer_add	inc/string_buffer.h	82;"	d
+string_multibuffer_append	inc/string_buffer.h	100;"	d
+string_multibuffer_current	inc/string_buffer.h	77;"	d
+string_multibuffer_initialize	inc/string_buffer.h	70;"	d
+subResource	inc/request.h	/^    const char *subResource;$/;"	m	struct:RequestParams
+sysname	inc/mingw/sys/utsname.h	/^    const char *sysname;$/;"	m	struct:utsname
+targetBucketReturn	src/service_access_logging.c	/^    char *targetBucketReturn;$/;"	m	struct:ConvertBlsData	file:
+targetBucketReturn	src/service_access_logging.c	/^    char *targetBucketReturn;$/;"	m	struct:GetBlsData	file:
+targetBucketReturnLen	src/service_access_logging.c	/^    int targetBucketReturnLen;$/;"	m	struct:ConvertBlsData	file:
+targetPrefixReturn	src/service_access_logging.c	/^    char *targetPrefixReturn;$/;"	m	struct:ConvertBlsData	file:
+targetPrefixReturn	src/service_access_logging.c	/^    char *targetPrefixReturn;$/;"	m	struct:GetBlsData	file:
+targetPrefixReturnLen	src/service_access_logging.c	/^    int targetPrefixReturnLen;$/;"	m	struct:ConvertBlsData	file:
+testBucketCompleteCallback	src/bucket.c	/^static void testBucketCompleteCallback(S3Status requestStatus, $/;"	f	file:
+testBucketDataCallback	src/bucket.c	/^static S3Status testBucketDataCallback(int bufferSize, const char *buffer,$/;"	f	file:
+testBucketPropertiesCallback	src/bucket.c	/^static S3Status testBucketPropertiesCallback$/;"	f	file:
+testBucketXmlCallback	src/bucket.c	/^static S3Status testBucketXmlCallback(const char *elementPath,$/;"	f	file:
+test_bucket	src/s3.c	/^static void test_bucket(int argc, char **argv, int optindex)$/;"	f	file:
+toS3Callback	inc/request.h	/^    S3PutObjectDataCallback *toS3Callback;$/;"	m	struct:Request
+toS3Callback	inc/request.h	/^    S3PutObjectDataCallback *toS3Callback;$/;"	m	struct:RequestParams
+toS3CallbackBytesRemaining	inc/request.h	/^    int64_t toS3CallbackBytesRemaining;$/;"	m	struct:Request
+toS3CallbackTotalSize	inc/request.h	/^    int64_t toS3CallbackTotalSize;$/;"	m	struct:RequestParams
+uname	src/mingw_functions.c	/^int uname(struct utsname *u)$/;"	f
+unsetenv	src/mingw_s3_functions.c	/^int unsetenv(const char *a)$/;"	f
+uri	inc/request.h	/^    char uri[MAX_URI_SIZE + 1];$/;"	m	struct:Request
+uriStyle	inc/libs3.h	/^    S3UriStyle uriStyle;$/;"	m	struct:S3BucketContext
+uriStyleG	src/s3.c	/^static S3UriStyle uriStyleG = S3UriStylePath;$/;"	v	file:
+uri_append	src/request.c	749;"	d	file:
+urlEncode	src/util.c	/^int urlEncode(char *dest, const char *src, int maxSrcSize)$/;"	f
+urlEncodedKey	src/request.c	/^    char urlEncodedKey[MAX_URLENCODED_KEY_SIZE + 1];$/;"	m	struct:RequestComputedValues	file:
+usageExit	src/s3.c	/^static void usageExit(FILE *out)$/;"	f	file:
+userAgentG	src/request.c	/^static char userAgentG[USER_AGENT_SIZE];$/;"	v	file:
+utsname	inc/mingw/sys/utsname.h	/^struct utsname$/;"	s
+value	inc/libs3.h	/^    const char *value;$/;"	m	struct:S3NameValue
+xmlCallback	src/service.c	/^static S3Status xmlCallback(const char *elementPath, const char *data,$/;"	f	file:
+xmlParser	inc/simplexml.h	/^    void *xmlParser;$/;"	m	struct:SimpleXml
