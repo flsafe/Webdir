@@ -7,6 +7,6 @@ void get_access_key(char[]);
 void get_secret_key(char[]);
 void get_host(char[]);
 void get_bucket(char[]);
-void set_bucket(char[]);
+int  set_bucket(char[]);
 
 #endif

@@ -78,7 +78,6 @@ static int write_settings_file(char access_v[],
     return 0;
   if (! fprintf(file, "%s %s\n", HOST, host_v)) 
     return 0;
-
   if (! fprintf(file, "%s %s\n", BUCKET, bucket_v))
     return 0;
 
@@ -100,13 +99,10 @@ int is_loaded_ok(){
 }
 
 int load_settings(){
-  if (settings_file_exists()){
-    read_settings_file();
-  }
-  else{
+  if (!settings_file_exists()){
     create_default_settings_file();
-    read_settings_file();
   }
+  read_settings_file();
     
   return is_loaded_ok();
 }
@@ -131,12 +127,12 @@ void get_bucket(char key[]){
   strncpy(key, bucket, STR); 
 }
 
-void set_bucket(char val[]){
+int set_bucket(char val[]){
   strncpy(bucket, val, STR);
-  write_settings_file(access_key,
-                      secret_key,
-                      host,
-                      bucket);
+  return write_settings_file(access_key,
+                             secret_key,
+                             host,
+                             bucket);
 }
 
 #ifdef TESTING
@@ -161,7 +157,7 @@ int main(){
   get_bucket(key);
   printf("BUCKET %s\n", key);
 
-  return 1;
+  return 0;
 }
 
 #endif
