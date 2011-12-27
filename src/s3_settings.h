@@ -3,9 +3,10 @@
 
 void load_settings();
 
-char *get_access_key();
-char *get_secret_key();
-char *get_host();
-char *get_bucket();
+void get_access_key(char[]);
+void get_secret_key(char[]);
+void get_host(char[]);
+void get_bucket(char[]);
+void set_bucket(char[]);
 
 #endif

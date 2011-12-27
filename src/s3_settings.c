@@ -19,7 +19,6 @@ static char host[STR] = "";
 static char BUCKET[STR] = "BUCKET"; 
 static char bucket[STR] = "";
 
-
 static int get_settings_file_path(char *out_path_buff){
   char *home_dir_path; 
 
@@ -56,10 +55,16 @@ static void read_settings_file(){
 }
 
 static int settings_file_exists(){
-  return access(SETTINGS_FILE, F_OK) == 0;
+  char settings_path[STR] = "";
+
+  get_settings_file_path(settings_path);
+  return access(settings_path, F_OK) == 0;
 }
 
-static int create_default_settings_file(){
+static int write_settings_file(char access_v[],
+                               char secret_v[],
+                               char host_v[],
+                               char bucket_v[]){
   FILE *file;
   char path[STR] = "";
 
@@ -67,14 +72,14 @@ static int create_default_settings_file(){
   file = fopen(path, "w");
   if (!file) return 0;
 
-  if (! fprintf(file, "%s %s\n", ACCESS_KEY, "<YourAccessKey>"))
+  if (! fprintf(file, "%s %s\n", ACCESS_KEY, access_v))
     return 0;
-  if (! fprintf(file, "%s %s\n", SECRET_KEY, "<YourSecretAccessKey>"))
+  if (! fprintf(file, "%s %s\n", SECRET_KEY, secret_v))
     return 0;
-  if (! fprintf(file, "%s %s\n", HOST, "<YourS3Host>"))
+  if (! fprintf(file, "%s %s\n", HOST, host_v)) 
     return 0;
 
-  if (! fprintf(file, "%s %s\n", BUCKET, "<NoneYet>"))
+  if (! fprintf(file, "%s %s\n", BUCKET, bucket_v))
     return 0;
 
   fclose(file);
@@ -82,9 +87,19 @@ static int create_default_settings_file(){
   return 1;
 }
 
-int load_settings(){
-  int is_loaded_ok();
+static int create_default_settings_file(){
+  return write_settings_file("<YourAccessKey>",
+                             "<YourSecretKey>",
+                             "<YourS3Host>",
+                             "<YourDefaultBucket>");
+}
 
+int is_loaded_ok(){
+  return (access_key[0] && secret_key[0] && host[0]) &&
+         (access_key[0] != '<' && secret_key[0] != '<' && host[0] != '<');
+}
+
+int load_settings(){
   if (settings_file_exists()){
     read_settings_file();
   }
@@ -96,36 +111,55 @@ int load_settings(){
   return is_loaded_ok();
 }
 
-int is_loaded_ok(){
-  return (access_key[0] && secret_key[0] && host[0]);
+void get_access_key(char key[]){
+  memset(key, '\0', STR); 
+  strncpy(key, access_key, STR); 
 }
 
-char *get_access_key(){
-  return access_key;
+void get_secret_key(char key[]){
+  memset(key, '\0', STR); 
+  strncpy(key, secret_key, STR); 
 }
 
-char *get_secret_key(){
-  return secret_key;
+void get_host(char key[]){
+  memset(key, '\0', STR);
+  strncpy(key, host, STR); 
 }
 
-char *get_host(){
-  return host;
+void get_bucket(char key[]){
+  memset(key, '\0', STR); 
+  strncpy(key, bucket, STR); 
 }
 
-char *get_bucket(){
-  return bucket;
+void set_bucket(char val[]){
+  strncpy(bucket, val, STR);
+  write_settings_file(access_key,
+                      secret_key,
+                      host,
+                      bucket);
 }
 
 #ifdef TESTING
 
 int main(){
   int load_settings_file(); 
+  char key[STR];
  
   printf("stat %d\n", load_settings());
-  printf("ACCESS_KEY %s\n", get_access_key());
-  printf("SECRET_KEY %s\n", get_secret_key());
-  printf("HOST %s\n", get_host());
-  printf("BUCKET %s\n", get_bucket());
+
+  get_access_key(key);
+  printf("ACCESS_KEY %s\n", key);
+  
+  get_secret_key(key);
+  printf("SECRET_KEY %s\n", key); 
+
+  get_host(key);
+  printf("HOST %s\n", key);
+
+  set_bucket("changed_bucket");
+
+  get_bucket(key);
+  printf("BUCKET %s\n", key);
 
   return 1;
 }
