@@ -1,7 +1,7 @@
 #ifndef S3_SETTINGS_H
 #define S3_SETTINGS_H
 
-void load_settings();
+int  load_settings();
 
 void get_access_key(char[]);
 void get_secret_key(char[]);
