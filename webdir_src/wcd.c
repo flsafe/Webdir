@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "libs3.h"
 #include "s3_settings.h"
+#include "unistd.h"
 
 #define STR 64
 #define TXT 4096
@@ -140,7 +141,7 @@ static void test_bucket(char *bname){
     S3_deinitialize();
 }
 
-int main(char **argv, int argc){
+int main(int argc, char **argv){
   if (argc == 2){
     test_bucket(argv[1]);
   }
