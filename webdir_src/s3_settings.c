@@ -93,9 +93,10 @@ static int create_default_settings_file(){
                              "<YourDefaultBucket>");
 }
 
-int is_loaded_ok(){
+static int is_loaded_ok(){
   return (access_key[0] && secret_key[0] && host[0]) &&
-         (access_key[0] != '<' && secret_key[0] != '<' && host[0] != '<');
+         (access_key[0] != '<' && secret_key[0] != '<' && host[0] != '<'
+				 && bucket[0] != '<');
 }
 
 int load_settings(){
