@@ -4,14 +4,14 @@
 #include <libs3.h>
 #include "s3_settings.h"
 
-#define STR 64
+#define STR 128
 #define TXT 4096
 
 #define SLEEP_UNITS_PER_SECOND 1
 
 int RequestStatus = 0;
 int RequestRetries = 5;
-char RequestErrDetails[TXT] = "";
+char RequestErrDetails[TXT] = { 0 };
 
 static void s3_init(){
     S3Status status;
@@ -38,8 +38,7 @@ static int should_retry(){
     return 0;
 }
 
-static void print_err()
-{
+static void print_err(){
     if (RequestStatus < S3StatusErrorAccessDenied) {
         fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
     }
@@ -90,15 +89,18 @@ static void res_complete(S3Status status,
 }
 
 static S3Status res_properties(const S3ResponseProperties *properties, 
-                                    void *callbackData)
-{
+                               void *callbackData){
   return S3StatusOK;
 }
 
 static void test_bucket(char *bname){
 
     s3_init();
-    load_settings();
+
+    if (! load_settings()){
+			printf("Configure your ~/.webdir-settings file!\n");
+			exit(1);
+		}
 
     char skey[STR];
     get_secret_key(skey);
