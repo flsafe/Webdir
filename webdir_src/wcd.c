@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include "libs3.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include <libs3.h>
 #include "s3_settings.h"
-#include "unistd.h"
 
 #define STR 64
 #define TXT 4096
@@ -11,6 +12,20 @@
 int RequestStatus = 0;
 int RequestRetries = 5;
 char RequestErrDetails[TXT] = "";
+
+static void s3_init(){
+    S3Status status;
+		char host[STR] = "";
+
+		get_host(host);
+    
+    if ((status = S3_initialize("s3", S3_INIT_ALL, host))
+        != S3StatusOK) {
+        fprintf(stderr, "Failed to initialize libs3: %s\n", 
+                S3_get_status_name(status));
+        exit(-1);
+    }
+}
 
 static int should_retry(){
     if (RequestRetries--) {
@@ -23,7 +38,7 @@ static int should_retry(){
     return 0;
 }
 
-static void printError()
+static void print_err()
 {
     if (RequestStatus < S3StatusErrorAccessDenied) {
         fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
@@ -82,7 +97,7 @@ static S3Status res_properties(const S3ResponseProperties *properties,
 
 static void test_bucket(char *bname){
 
-    S3_init();
+    s3_init();
     load_settings();
 
     char skey[STR];
@@ -94,10 +109,10 @@ static void test_bucket(char *bname){
         &res_properties, &res_complete/* Can properties be null?*/
     };
 
-    char loc_constraint[64];
+    char loc_constraint[STR];
     do {
         S3_test_bucket(S3ProtocolHTTPS, 
-                       S3UriStyle, 
+                       S3UriStylePath, 
                        akey, 
                        skey,
                        0, 
@@ -135,7 +150,7 @@ static void test_bucket(char *bname){
         printf("%-56s  %-20s\n", bname, result);
     }
     else {
-        printError();
+        print_err();
     }
 
     S3_deinitialize();
@@ -145,4 +160,5 @@ int main(int argc, char **argv){
   if (argc == 2){
     test_bucket(argv[1]);
   }
+	return 0;
 }
