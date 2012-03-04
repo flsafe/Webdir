@@ -39,13 +39,8 @@ static int should_retry(){
 }
 
 static void print_err(){
-    if (RequestStatus < S3StatusErrorAccessDenied) {
-        fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
-    }
-    else {
-        fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
-        fprintf(stderr, "%s\n", RequestErrDetails);
-    }
+		fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
+		fprintf(stderr, "%s\n", RequestErrDetails);
 }
 
 static void res_complete(S3Status status,
@@ -106,6 +101,8 @@ static void test_bucket(char *bname){
     get_secret_key(skey);
     char akey[STR];
     get_access_key(akey);
+		char hostname[STR];
+		get_host(hostname);
 
     S3ResponseHandler res_handler = {
         &res_properties, &res_complete/* Can properties be null?*/
@@ -117,7 +114,7 @@ static void test_bucket(char *bname){
                        S3UriStylePath, 
                        akey, 
                        skey,
-                       0, 
+                       hostname, 
                        bname, 
                        sizeof(loc_constraint),
                        loc_constraint, 
