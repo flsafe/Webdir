@@ -3,5 +3,8 @@ CFLAGS += -g -Wall -Werror -Wshadow -I/usr/include:webdir_src -L/usr/lib
 wcd: webdir_src/wcd.c s3_settings.o
 	gcc $(CFLAGS) -o wcd webdir_src/wcd.c webdir_src/s3_settings.o -ls3
 
+wpwd: webdir_src/wpwd.c s3_settings.o
+	gcc $(CFLAGS) -o wpwd webdir_src/wpwd.c webdir_src/s3_settings.o -ls3
+
 s3_settings.o:
 	gcc -o  webdir_src/s3_settings.o -c webdir_src/s3_settings.c
