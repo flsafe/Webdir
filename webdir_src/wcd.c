@@ -38,17 +38,12 @@ static int should_retry(){
     return 0;
 }
 
-static void print_err(){
+static void print_error_details(){
 		fprintf(stderr, "\nERROR: %s\n", S3_get_status_name(RequestStatus));
 		fprintf(stderr, "%s\n", RequestErrDetails);
 }
 
-static void res_complete(S3Status status,
-                         const S3ErrorDetails *error, 
-                         void *callbackData){
-    (void) callbackData;
-
-    RequestStatus = status;
+static void gather_error_details(const S3ErrorDetails *error){
     // Compose the error details message now, although we might not use it.
     // Can't just save a pointer to [error] since it's not guaranteed to last
     // beyond this callback
@@ -83,12 +78,43 @@ static void res_complete(S3Status status,
     }
 }
 
+static void res_complete(S3Status status,
+                         const S3ErrorDetails *error, 
+                         void *callbackData){
+    RequestStatus = status;
+		gather_error_details(error);
+}
+
 static S3Status res_properties(const S3ResponseProperties *properties, 
                                void *callbackData){
   return S3StatusOK;
 }
 
-static void test_bucket(char *bname){
+static void print_error_message(char *bname){
+    const char *message = 0;
+		int ok = 0;
+
+    switch (RequestStatus) {
+    case S3StatusOK:
+				ok = 1;
+        break;
+    case S3StatusErrorNoSuchBucket:
+        message = "Does Not Exist";
+        break;
+    case S3StatusErrorAccessDenied:
+        message = "Access Denied";
+        break;
+    default:
+        message = 0;
+        break;
+    }
+
+    if (!ok){
+        printf("%s %s\n", bname, message);
+    }
+}
+
+static int bucket_exists(char *bname){
 
     s3_init();
 
@@ -123,41 +149,19 @@ static void test_bucket(char *bname){
                        0);
     } while (S3_status_is_retryable(RequestStatus) && should_retry());
 
-    const char *result = 0;
-
-    switch (RequestStatus) {
-    case S3StatusOK:
-        // bucket exists
-        result = loc_constraint[0] ? loc_constraint: "USA";
-        break;
-    case S3StatusErrorNoSuchBucket:
-        result = "Does Not Exist";
-        break;
-    case S3StatusErrorAccessDenied:
-        result = "Access Denied";
-        break;
-    default:
-        result = 0;
-        break;
-    }
-
-    if (result) {
-        printf("%-56s  %-20s\n", "                         Bucket",
-               "       Status");
-        printf("--------------------------------------------------------  "
-               "--------------------\n");
-        printf("%-56s  %-20s\n", bname, result);
-    }
-    else {
-        print_err();
-    }
 
     S3_deinitialize();
+
+		return RequestStatus == S3StatusOK; // Bucket exists
 }
 
 int main(int argc, char **argv){
-  if (argc == 2){
-    test_bucket(argv[1]);
-  }
+  if (argc != 2) return 1;
+
+	if (!bucket_exists(argv[1])){
+		print_error_details();
+		print_error_message(argv[1]);
+	}
+
 	return 0;
 }
